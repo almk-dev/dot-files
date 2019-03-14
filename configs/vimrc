@@ -1,0 +1,53 @@
+execute pathogen#infect()
+
+"let g:airline#extensions#tabline#formatter='unique_tail'
+let g:airline#extensions#tabline#enabled=1
+"let g:airline#extensions#tabline#tab_nr_type = 1
+"let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline_powerline_fonts=1
+let g:airline_theme='powerlineish'
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
+
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+
+colorscheme gruvbox
+filetype plugin indent on
+syntax enable
+
+map <space> :
+
+set nowrap
+set autoindent
+set background=dark
+set backspace=2
+set colorcolumn=+1
+set cursorline
+set hlsearch
+set incsearch
+set laststatus=2
+set mouse=a
+set number
+set ruler
+set shiftwidth=4
+"set showbreak=↳\
+set showcmd
+set smartindent
+set softtabstop=4
+set splitbelow
+set splitright
+set tabstop=4
+set term=xterm-256color
+set textwidth=100
+set ttimeoutlen=25
+set updatetime=25
+set wildmenu
+
+"highlight ColorColumn			ctermbg=DarkRed
+highlight Normal				ctermbg=None
+highlight SignColumn			ctermbg=None
+
+highlight GitGutterAdd			ctermbg=None
+highlight GitGutterDelete		ctermbg=None
+highlight GitGutterChange		ctermbg=None
+highlight GitGutterChangeDelete ctermbg=None

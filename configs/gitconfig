@@ -1,0 +1,7 @@
+[user]
+	name = abdl-dev
+	email = me@abdl.dev
+[color]
+	ui = true
+[push]
+	default = simple
