@@ -1,0 +1,39 @@
+[submodule "configs/vim/bundle/vim-airline-themes"]
+	path = configs/vim/bundle/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "configs/vim/bundle/vim-airline"]
+	path = configs/vim/bundle/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "configs/vim/bundle/vim-devicons"]
+	path = configs/vim/bundle/vim-devicons
+	url = git@github.com:ryanoasis/vim-devicons.git
+[submodule "configs/vim/bundle/vim-fugitive"]
+	path = configs/vim/bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "configs/vim/bundle/vim-gitgutter"]
+	path = configs/vim/bundle/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "configs/vim/bundle/vim-gruvbox"]
+	path = configs/vim/bundle/vim-gruvbox
+	url = git@github.com:morhetz/gruvbox.git
+[submodule "configs/vim/bundle/vim-nerdtree."]
+	path = configs/vim/bundle/vim-nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "configs/vim/bundle/vim-nerdtree-git-plugin"]
+	path = configs/vim/bundle/vim-nerdtree-git-plugin
+	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
+[submodule "configs/vim/bundle/vim-pathogen"]
+	path = configs/vim/bundle/vim-pathogen
+	url = git@github.com:tpope/vim-pathogen.git
+[submodule "configs/vim/bundle/vim-supertab"]
+	path = configs/vim/bundle/vim-supertab
+	url = git@github.com:ervandew/supertab.git
+[submodule "configs/vim/bundle/vim-tmuxline"]
+	path = configs/vim/bundle/vim-tmuxline
+	url = git@github.com:edkolev/tmuxline.vim.git
+[submodule "resources/repos/cli-visualizer"]
+	path = resources/repos/cli-visualizer
+	url = git@github.com:dpayne/cli-visualizer.git
+[submodule "configs/oh-my-zsh"]
+	path = configs/oh-my-zsh
+	url = git@github.com:robbyrussell/oh-my-zsh.git
