@@ -4,11 +4,12 @@ ZSH_THEME="terminalparty"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+#check for collisions for all
 alias escmap='setxkbmap -option caps:escape'
 alias groot='cd $(git rev-parse --show-toplevel)'
-alias opn='xdg-open'
-alias rall='cd ~/Documents/repos/'
-alias rsys='cd ~/Documents/repos/system/'
+alias open='xdg-open'
+alias rpos='cd ~/Documents/repos/'
+alias rdot='cd ~/Documents/repos/dot-files'
 alias vimide='vim -c "NERDTree | wincmd w"'
 alias xclip='xclip -selection clipboard'
 #alias mgrep, vgrep=
@@ -20,10 +21,10 @@ gsup() {
 }
 
 otbkup() {
-	if [[ $1 == "-c"* ]]; then
-		xclip -selection clipboard < ~/Documents/onetab-backup
+	if [[ $1 == "-copy" ]]; then
+		xclip -selection clipboard < ~/Documents/stash/onetab-backup
 	else
-		xclip -selection clipboard -out > ~/Documents/onetab-backup
+		xclip -selection clipboard -out > ~/Documents/stash/onetab-backup
 	fi
 }
 
@@ -36,7 +37,22 @@ pkgup() {
 			sudo apt autoremove
 			sudo apt dist-upgrade
 			sudo snap refresh
-			sudo pip3 install youtube-dl --upgrade
+			pipdate3
+		fi
+		if [[ $@ == *"-apt"* ]]; then
+			sudo apt update
+			sudo apt upgrade
+			sudo apt autoclean
+			sudo apt autoremove
+		fi
+		if [[ $@ == *"-dist"* ]]; then
+			sudo apt dist-upgrade
+		fi
+		if [[ $1 == *"-snap"* ]]; then
+			sudo snap refresh
+		fi
+		if [[ $@ == *"-pip"* ]]; then
+			pipdate3
 		fi
 	else
 		echo "Operating system not supported"
@@ -48,7 +64,7 @@ tland() {
 	tmux split-window -v -p 70
 	tmux split-window -v -p 70
 	tmux send-keys -t 0.0 "vim -c q; clear" C-m
-	tmux send-keys -t 0.1 "htop -d 10" C-m
+	tmux send-keys -t 0.1 "htop -d 5" C-m
 	tmux send-keys -t 0.2 "vis" C-m
 	tmux send-keys -t 0.3 "cmus" C-m
 	tmux select-pane -t 0
@@ -57,11 +73,10 @@ tland() {
 tport() {
 	tmux split-window -v -p 80
 	tmux new-window
-	tmux split-window -v -p 80
-	tmux send-keys -t 0.0 "htop -d 10" C-m
-	tmux send-keys -t 0.1 "vim -c q; clear" C-m
-	tmux send-keys -t 1.0 "vis" C-m
-	tmux send-keys -t 1.1 "cmus" C-m
-	tmux select-window -t 0
-	tmux select-pane -t 1
+	tmux split-window -v
+	tmux resize-pane -t 1.0 -y 8
+	tmux send-keys -t 0.0 "vis" C-m
+	tmux send-keys -t 0.1 "cmus" C-m
+	tmux send-keys -t 1.0 "htop -d 10" C-m
+	tmux send-keys -t 1.1 "vim -c q; clear" C-m
 }
