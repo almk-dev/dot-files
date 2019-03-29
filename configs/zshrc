@@ -26,6 +26,7 @@ otbkup() {
 	else
 		xclip -selection clipboard -out > ~/Documents/stash/onetab-backup
 	fi
+	head -5 ~/Documents/stash/onetab-backup
 }
 
 pkgup() {
@@ -44,11 +45,11 @@ pkgup() {
 			sudo apt upgrade
 			sudo apt autoclean
 			sudo apt autoremove
+			if [[ $@ == *"-dist"* ]]; then
+				sudo apt dist-upgrade
+			fi
 		fi
-		if [[ $@ == *"-dist"* ]]; then
-			sudo apt dist-upgrade
-		fi
-		if [[ $1 == *"-snap"* ]]; then
+		if [[ $@ == *"-snap"* ]]; then
 			sudo snap refresh
 		fi
 		if [[ $@ == *"-pip"* ]]; then
