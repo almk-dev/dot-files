@@ -7,7 +7,7 @@ use the **AlternateTab** extension to change alt-tab behavior (**gnome-shell-ext
 Almost everything else is left as is.
 
 I use the pre-installed **gnome-terminal**, with white on black text and the built-in **XTerm**
-scheme for its color palette, with 10% transparency. The monospace font in the screenshots is
+scheme for its color palette, with zero transparency. The monospace font in the screenshots is
 **UbuntuMono**, with the [**NerdFonts**](https://github.com/ryanoasis/nerd-fonts) patched glyphs.
 The proportional font used is the default **UbuntuRegular**. The background in the screenshot is
 Justin Maller's [**Ghosts II**](http://www.facets.la/2013/200/).
