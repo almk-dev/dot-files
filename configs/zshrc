@@ -4,19 +4,21 @@ ZSH_THEME="terminalparty"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-#check for collisions for all
 alias escmap='setxkbmap -option caps:escape'
 alias groot='cd $(git rev-parse --show-toplevel)'
 alias open='xdg-open'
-alias rpos='cd ~/Documents/repos/'
+alias rall='cd ~/Documents/repos/'
 alias rdot='cd ~/Documents/repos/dot-files'
-alias vimide='vim -c "NERDTree | wincmd w"'
+alias vim='escmap; vim'
+alias vimide='escmap; vim -c "NERDTree | wincmd w"'
 alias xclip='xclip -selection clipboard'
-#alias mgrep, vgrep=
+
+grepm() { grep $1 ~/Music/tracking/* }
+grepv() { grep $1 ~/Videos/tracking/* }
 
 gsup() {
 	if [[ $(git submodule update --recursive --remote) ]]; then
-		git commit -am "UPDATE all submodules to upstream commits"
+		git commit -am "Update all submodules to upstream commits"
 	fi
 }
 
@@ -25,6 +27,8 @@ otbkup() {
 		xclip -selection clipboard < ~/Documents/stash/onetab-backup
 	else
 		xclip -selection clipboard -out > ~/Documents/stash/onetab-backup
+		awk "NF" ~/Documents/stash/onetab-backup > onetab-backup-temp
+		mv onetab-backup-temp ~/Documents/stash/onetab-backup
 	fi
 	head -5 ~/Documents/stash/onetab-backup
 }
@@ -61,23 +65,34 @@ pkgup() {
 }
 
 tland() {
-	tmux split-window -h -p 40
-	tmux split-window -v -p 70
-	tmux split-window -v -p 70
-	tmux send-keys -t 0.0 "vim -c q; clear" C-m
-	tmux send-keys -t 0.1 "htop -d 5" C-m
-	tmux send-keys -t 0.2 "vis" C-m
-	tmux send-keys -t 0.3 "cmus" C-m
-	tmux select-pane -t 0
+	if [[ $1 == "-right" ]]; then
+		tmux split-window -t 0.0 -h -p 40
+		tmux split-window -t 0.1 -v -p 70
+		tmux split-window -t 0.2 -v -p 70
+		tmux send-keys -t 0.0 "vim -c q; reset" C-m
+		tmux send-keys -t 0.1 "htop -d 5" C-m
+		tmux send-keys -t 0.2 "vis" C-m
+		tmux send-keys -t 0.3 "cmus" C-m
+		tmux select-pane -t 0
+	else
+		tmux split-window -t 0.0 -h -p 60
+		tmux split-window -t 0.0 -v -p 70
+		tmux split-window -t 0.1 -v -p 70
+		tmux send-keys -t 0.0 "htop -d 5" C-m
+		tmux send-keys -t 0.1 "vis" C-m
+		tmux send-keys -t 0.2 "cmus" C-m
+		tmux send-keys -t 0.3 "vim -c q; reset" C-m
+		tmux select-pane -t 3
+	fi
 }
 
 tport() {
-	tmux split-window -v -p 80
+	tmux split-window -t 0.0 -v -p 80
 	tmux new-window
-	tmux split-window -v
+	tmux split-window -t 1.0 -v
 	tmux resize-pane -t 1.0 -y 8
 	tmux send-keys -t 0.0 "vis" C-m
 	tmux send-keys -t 0.1 "cmus" C-m
-	tmux send-keys -t 1.0 "htop -d 10" C-m
-	tmux send-keys -t 1.1 "vim -c q; clear" C-m
+	tmux send-keys -t 1.0 "htop -d 5" C-m
+	tmux send-keys -t 1.1 "vim -c q; reset" C-m
 }
