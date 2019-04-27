@@ -35,30 +35,13 @@ otbkup() {
 
 pkgup() {
 	if [[ `uname` == "Linux" ]]; then
-		if [[ -z $1 ]]; then
-			sudo apt update
-			sudo apt upgrade
-			sudo apt autoclean
-			sudo apt autoremove
-			sudo apt dist-upgrade
-			sudo snap refresh
-			pipdate3
-		fi
-		if [[ $@ == *"-apt"* ]]; then
-			sudo apt update
-			sudo apt upgrade
-			sudo apt autoclean
-			sudo apt autoremove
-			if [[ $@ == *"-dist"* ]]; then
-				sudo apt dist-upgrade
-			fi
-		fi
-		if [[ $@ == *"-snap"* ]]; then
-			sudo snap refresh
-		fi
-		if [[ $@ == *"-pip"* ]]; then
-			pipdate3
-		fi
+		sudo apt update
+		sudo apt upgrade
+		sudo apt autoclean
+		sudo apt autoremove
+		sudo apt dist-upgrade
+		sudo snap refresh
+		pip3 install --upgrade youtube_dl
 	else
 		echo "Operating system not supported"
 	fi
