@@ -37,11 +37,11 @@ pkgup() {
 	if [[ `uname` == "Linux" ]]; then
 		sudo apt update
 		sudo apt upgrade
+		sudo apt full-upgrade
 		sudo apt autoclean
 		sudo apt autoremove
-		sudo apt dist-upgrade
 		sudo snap refresh
-		pip3 install --upgrade youtube_dl
+		pip3 install --upgrade youtube-dl
 	else
 		echo "Operating system not supported"
 	fi

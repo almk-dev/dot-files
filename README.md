@@ -43,3 +43,36 @@ Justin Maller's [**Ghosts II**](http://www.facets.la/2013/200/).
 `nerdtree`,`nerdtree-git-plugin`,`pathogen`,`supertab`,`tmuxline`
 #### zsh-plugins
 `oh-my-zsh`
+
+DUMP
+=====
+install-list
+	history.log:Commandline: apt install chrome-gnome-shell
+	history.log:Commandline: apt install cmus
+	history.log:Commandline: apt install gnome-tweaks
+	history.log:Commandline: apt install htop
+	history.log:Commandline: apt install libfftw3-dev libncursesw5-dev cmake libpulse-dev
+	history.log:Commandline: apt install mpv
+	history.log:Commandline: apt install python3-pip
+	history.log:Commandline: apt install transmission
+	history.log:Commandline: apt install xclip
+	history.log:Commandline: apt install zsh git vim tmux
+	history.log:Commandline: apt install exfat-fuse exfat-utils
+	history.log.6.gz:Commandline: apt install ruby-dev
+
+remove-list
+	history.log:Commandline: apt purge firefox firefox-locale-en
+	history.log:Commandline: apt purge gnome-shell-extension-desktop-icons gnome-shell-extension-ubuntu-dock
+	history.log:Commandline: apt purge youtube-dl
+
+gsettings
+	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 25
+	gsettings set org.gnome.desktop.peripherals.keyboard delay 500
+	gsettings set org.gnome.desktop.interface cursor-blink-time 500
+	gsettings set org.gnome.desktop.peripherals.mouse speed 0.0
+	gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
+
+apple-cmd-opt-swap
+	echo options hid_apple swap_opt_cmd=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
+	sudo update-initramfs -u -k all
+	sudo reboot
