@@ -48,16 +48,7 @@ pkgup() {
 }
 
 tland() {
-	if [[ $1 == "-right" ]]; then
-		tmux split-window -t 0.0 -h -p 40
-		tmux split-window -t 0.1 -v -p 70
-		tmux split-window -t 0.2 -v -p 70
-		tmux send-keys -t 0.0 "vim -c q; reset" C-m
-		tmux send-keys -t 0.1 "htop -d 5" C-m
-		tmux send-keys -t 0.2 "vis" C-m
-		tmux send-keys -t 0.3 "cmus" C-m
-		tmux select-pane -t 0
-	else
+	if [[ $1 == "-reverse" ]]; then
 		tmux split-window -t 0.0 -h -p 60
 		tmux split-window -t 0.0 -v -p 70
 		tmux split-window -t 0.1 -v -p 70
@@ -66,6 +57,15 @@ tland() {
 		tmux send-keys -t 0.2 "cmus" C-m
 		tmux send-keys -t 0.3 "vim -c q; reset" C-m
 		tmux select-pane -t 3
+	else
+		tmux split-window -t 0.0 -h -p 40
+		tmux split-window -t 0.1 -v -p 70
+		tmux split-window -t 0.2 -v -p 70
+		tmux send-keys -t 0.0 "vim -c q; reset" C-m
+		tmux send-keys -t 0.1 "htop -d 5" C-m
+		tmux send-keys -t 0.2 "vis" C-m
+		tmux send-keys -t 0.3 "cmus" C-m
+		tmux select-pane -t 0
 	fi
 }
 
