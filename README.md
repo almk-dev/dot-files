@@ -76,3 +76,11 @@ apple-cmd-opt-swap
 	echo options hid_apple swap_opt_cmd=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
 	sudo update-initramfs -u -k all
 	sudo reboot
+
+disable-boot-chime
+	nvram SystemAudioVolume=%00
+
+graphics-switching-for-macbook
+	rEFInd:
+		apt install refind
+	git@github.com:0xbb/gpu-switch.git

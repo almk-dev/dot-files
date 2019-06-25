@@ -37,3 +37,6 @@
 [submodule "configs/oh-my-zsh"]
 	path = configs/oh-my-zsh
 	url = git@github.com:robbyrussell/oh-my-zsh.git
+[submodule "resources/repos/gpu-switch"]
+	path = resources/repos/gpu-switch
+	url = git@github.com:0xbb/gpu-switch.git
