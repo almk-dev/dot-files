@@ -24,7 +24,7 @@ Justin Maller's [**Ghosts II**](http://www.facets.la/2013/200/).
 `arc-theme`,`cmus`,`git`,`gnome-shell-extensions`\
 `htop`,`mpv`,`tmux`,`vim`,`vis`,`xclip`,`youtube-dl`,`zsh`
 #### other
-`deluge`,`discord`,`gnome-tweaks`,`google-chrome`,`picard`,`syncthing`
+`discord`,`gnome-tweaks`,`google-chrome`,`picard`,`qbittorrent`,`syncthing`
 #### pending
 `weechat`,`cowsay`,`screenfetch`,`unison`/`samba`\
 `runtimes`: `python`, `pip`, `build-essential`, `make`, `automake`, `gcc`, `java`
@@ -48,7 +48,7 @@ DUMP
 =====
 install-list
 	history.log:Commandline: apt install chrome-gnome-shell
-	history.log:Commandline: apt install deluge
+	history.log:Commandline: apt install qbittorrent
 	history.log:Commandline: apt install cmus
 	history.log:Commandline: apt install gnome-tweaks
 	history.log:Commandline: apt install htop
