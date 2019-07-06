@@ -25,10 +25,11 @@ gsup() {
 otbkup() {
 	if [[ $1 == "-copy" ]]; then
 		xclip -selection clipboard < ~/Documents/stash/onetab-backup
-	else
-		xclip -selection clipboard -out > ~/Documents/stash/onetab-backup
+	elif [[ $1 == "-merge" ]]; then
 		awk "NF" ~/Documents/stash/onetab-backup > onetab-backup-temp
 		mv onetab-backup-temp ~/Documents/stash/onetab-backup
+	else
+		xclip -selection clipboard -out > ~/Documents/stash/onetab-backup
 	fi
 	head -5 ~/Documents/stash/onetab-backup
 }

@@ -24,7 +24,7 @@ Justin Maller's [**Ghosts II**](http://www.facets.la/2013/200/).
 `arc-theme`,`cmus`,`git`,`gnome-shell-extensions`\
 `htop`,`mpv`,`tmux`,`vim`,`vis`,`xclip`,`youtube-dl`,`zsh`
 #### other
-`discord`,`gnome-tweaks`,`google-chrome`,`picard`,`syncthing`,`transmission`
+`deluge`,`discord`,`gnome-tweaks`,`google-chrome`,`picard`,`syncthing`
 #### pending
 `weechat`,`cowsay`,`screenfetch`,`unison`/`samba`\
 `runtimes`: `python`, `pip`, `build-essential`, `make`, `automake`, `gcc`, `java`
@@ -48,6 +48,7 @@ DUMP
 =====
 install-list
 	history.log:Commandline: apt install chrome-gnome-shell
+	history.log:Commandline: apt install deluge
 	history.log:Commandline: apt install cmus
 	history.log:Commandline: apt install gnome-tweaks
 	history.log:Commandline: apt install htop
@@ -64,6 +65,7 @@ remove-list
 	history.log:Commandline: apt purge firefox firefox-locale-en
 	history.log:Commandline: apt purge gnome-shell-extension-desktop-icons gnome-shell-extension-ubuntu-dock
 	history.log:Commandline: apt purge youtube-dl
+	history.log:Commandline: apt purge transmission
 
 gsettings
 	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 25
