@@ -81,8 +81,3 @@ apple-cmd-opt-swap
 
 disable-boot-chime
 	nvram SystemAudioVolume=%00
-
-graphics-switching-for-macbook
-	rEFInd:
-		apt install refind
-	git@github.com:0xbb/gpu-switch.git
