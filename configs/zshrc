@@ -16,9 +16,15 @@ alias xclip='xclip -selection clipboard'
 grepm() { grep $1 ~/Music/tracking/* }
 grepv() { grep $1 ~/Videos/tracking/* }
 
+gsdel() {
+	git submodule deinit --force -- $1
+	rm -rf .git/modules/$1
+	git rm -rf $1
+	git commit -am "remove submodule $1"
+}
 gsup() {
 	if [[ $(git submodule update --recursive --remote) ]]; then
-		git commit -am "Update all submodules to upstream commits"
+		git commit -am "update submodules to upstream"
 	fi
 }
 
