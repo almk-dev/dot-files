@@ -17,11 +17,17 @@ grepm() { grep $1 ~/Music/tracking/* }
 grepv() { grep $1 ~/Videos/tracking/* }
 
 gsdel() {
-	git submodule deinit --force -- $1
-	rm -rf .git/modules/$1
-	git rm -rf $1
-	git commit -am "remove submodule $1"
+	if [[ -z $1 ]]; then
+		echo "Submodule name not provided"
+	else
+		gspath=$(git submodule status | awk '{ print $2 }' | grep $1 | head -1)
+		git submodule deinit --force -- $gspath
+		rm -rf .git/modules/$gspath
+		git rm -rf $gspath
+		git commit -am "remove submodule $gspath"
+	fi
 }
+
 gsup() {
 	if [[ $(git submodule update --recursive --remote) ]]; then
 		git commit -am "update submodules to upstream"
