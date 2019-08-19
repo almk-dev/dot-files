@@ -81,3 +81,5 @@ apple-cmd-opt-swap
 
 disable-boot-chime
 	nvram SystemAudioVolume=%00
+ADD:
+	kdenlive, gimp, darktable
