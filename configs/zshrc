@@ -1,14 +1,15 @@
 export TERM="xterm-256color"
 export ZSH=$HOME/.oh-my-zsh/
-ZSH_THEME="af-magic"
+ZSH_THEME="eastwood"
+PROMPT="%"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 alias escmap='setxkbmap -option caps:escape'
 alias groot='cd $(git rev-parse --show-toplevel)'
 alias open='xdg-open'
-alias rall='cd ~/Documents/repos/'
-alias rdot='cd ~/Documents/repos/dot-files'
+alias rall='cd ~/Documents/repositories/'
+alias rdot='cd ~/Documents/repositories/dot-files'
 alias vim='escmap; vim'
 alias vimide='escmap; vim -c "NERDTree | wincmd w"'
 alias xclip='xclip -selection clipboard'
