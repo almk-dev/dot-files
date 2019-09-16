@@ -1,7 +1,7 @@
 # dot-files
 Linux dot-files (and more) across all my machines
 
-Currently, all my machines are running **Ubuntu 18.10**, with **GNOME**. I use **gnome-tweaks** and
+Currently, all my machines are running **Pop!_OS**, with **GNOME**. I use **gnome-tweaks** and
 **arc-theme** for the visual flavor, with **Arc-Darker** as the application theme variant. I also
 use the **AlternateTab** extension to change alt-tab behavior (**gnome-shell-extensions** required).
 Almost everything else is left as is.
@@ -55,7 +55,6 @@ install-list
 	history.log:Commandline: apt install libfftw3-dev libncursesw5-dev cmake libpulse-dev
 	history.log:Commandline: apt install mpv
 	history.log:Commandline: apt install python3-pip
-	history.log:Commandline: apt install transmission
 	history.log:Commandline: apt install xclip
 	history.log:Commandline: apt install zsh git vim tmux
 	history.log:Commandline: apt install exfat-fuse exfat-utils
