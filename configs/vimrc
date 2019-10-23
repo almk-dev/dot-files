@@ -33,7 +33,7 @@ map <space> :
 " FINAL
 set autoindent
 set background=dark
-set expandtab
+set noexpandtab " important to decide later
 set nowrap
 set number
 set smartindent
