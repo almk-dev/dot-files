@@ -80,15 +80,15 @@ tport() {
 	tmux send-keys -t 1.0 "sleep 0.25 && vim -c q && clear" C-m
 }
 
-OBSOLETE -> OneTab is no longer used as part of workflow
-otbkup() {
-	if [[ $1 == "--copy" ]]; then
-		xclip -selection clipboard < ~/Documents/onetab/backup
-	elif [[ $1 == "--merge" ]]; then
-		awk "NF" ~/Documents/onetab/backup > backup-temp
-		mv backup-temp ~/Documents/onetab/backup
-	else
-		xclip -selection clipboard -out > ~/Documents/onetab/backup
-	fi
-	head -5 ~/Documents/onetab/backup
-}
+# OBSOLETE -> OneTab is no longer used as part of workflow
+# otbkup() {
+# 	if [[ $1 == "--copy" ]]; then
+# 		xclip -selection clipboard < ~/Documents/onetab/backup
+# 	elif [[ $1 == "--merge" ]]; then
+# 		awk "NF" ~/Documents/onetab/backup > backup-temp
+# 		mv backup-temp ~/Documents/onetab/backup
+# 	else
+# 		xclip -selection clipboard -out > ~/Documents/onetab/backup
+# 	fi
+# 	head -5 ~/Documents/onetab/backup
+# }
