@@ -7,9 +7,6 @@
 [submodule "configs/vim/bundle/vim-devicons"]
 	path = configs/vim/bundle/vim-devicons
 	url = git@github.com:ryanoasis/vim-devicons.git
-[submodule "configs/vim/bundle/vim-fugitive"]
-	path = configs/vim/bundle/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
 [submodule "configs/vim/bundle/vim-gitgutter"]
 	path = configs/vim/bundle/vim-gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
