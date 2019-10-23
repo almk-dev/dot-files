@@ -1,7 +1,7 @@
 export TERM="xterm-256color"
 export ZSH=$HOME/.oh-my-zsh/
-ZSH_THEME=nanotech
-ZSH_THEME_RANDOM_CANDIDATES=(eastwood nanotech robbyrussell terminalparty)
+ZSH_THEME=eastwood
+ZSH_THEME_RANDOM_CANDIDATES=(eastwood nanotech terminalparty)
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
