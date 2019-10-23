@@ -1,14 +1,13 @@
-execute pathogen#infect()
-"call plug#begin('~/.vim/plugged')
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
-"Plug 'ryanoasis/vim-devicons'
-"Plug 'airblade/vim-gitgutter'
-"Plug 'morhetz/gruvbox'
-"Plug 'scrooloose/nerdtree'
-"Plug 'xuyuanp/nerdtree-git-plugin'
-"Plug 'edkolev/tmuxline.vim'
-"call plug#end()
+call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-gitgutter',{'as':'gitgutter'}
+Plug 'edkolev/tmuxline.vim',{'as':'tmuxline'}
+Plug 'morhetz/gruvbox'
+Plug 'ryanoasis/vim-devicons',{'as':'devicons'}
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline',{'as':'airline'}
+Plug 'vim-airline/vim-airline-themes',{'as':'airline-themes'}
+Plug 'xuyuanp/nerdtree-git-plugin'
+call plug#end()
 
 "let g:airline#extensions#tabline#formatter='unique_tail'
 "let g:airline#extensions#tabline#enabled=1
@@ -59,13 +58,8 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 
-" DISCARD
-" set showbreak=↳\
-
-"highlight ColorColumn			ctermbg=DarkRed
 highlight Normal				ctermbg=None
 highlight SignColumn			ctermbg=None
-
 highlight GitGutterAdd			ctermbg=None
 highlight GitGutterDelete		ctermbg=None
 highlight GitGutterChange		ctermbg=None
