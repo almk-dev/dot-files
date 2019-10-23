@@ -4,9 +4,6 @@
 [submodule "configs/vim/bundle/vim-gruvbox"]
 	path = configs/vim/bundle/vim-gruvbox
 	url = git@github.com:morhetz/gruvbox.git
-[submodule "configs/vim/bundle/vim-supertab"]
-	path = configs/vim/bundle/vim-supertab
-	url = git@github.com:ervandew/supertab.git
 [submodule "configs/vim/bundle/vim-tmuxline"]
 	path = configs/vim/bundle/vim-tmuxline
 	url = git@github.com:edkolev/tmuxline.vim.git

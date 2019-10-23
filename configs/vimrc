@@ -3,12 +3,11 @@ execute pathogen#infect()
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
 "Plug 'ryanoasis/vim-devicons'
-    "Plug 'vim-gitgutter'
-"Plug 'vim-gruvbox'
+"Plug 'airblade/vim-gitgutter'
+"Plug 'morhetz/gruvbox'
 "Plug 'scrooloose/nerdtree'
 "Plug 'xuyuanp/nerdtree-git-plugin'
-"Plug 'vim-supertab'
-"Plug 'vim-tmuxline'
+"Plug 'edkolev/tmuxline.vim'
 "call plug#end()
 
 "let g:airline#extensions#tabline#formatter='unique_tail'
@@ -63,7 +62,7 @@ set tabstop=4
 " DISCARD
 " set showbreak=↳\
 
-" highlight ColorColumn			ctermbg=DarkRed
+"highlight ColorColumn			ctermbg=DarkRed
 highlight Normal				ctermbg=None
 highlight SignColumn			ctermbg=None
 
