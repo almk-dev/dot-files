@@ -1,10 +1,12 @@
 export TERM="xterm-256color"
 export ZSH=$HOME/.oh-my-zsh/
-ZSH_THEME="eastwood"
-# eastwood, terminalparty, af-magic, amuse, nanotech, simple, sorin, wedisagree, robbyrussel, the unraveler, zhann
-PROMPT="%"
+ZSH_THEME=nanotech
+ZSH_THEME_RANDOM_CANDIDATES=(eastwood nanotech robbyrussell terminalparty)
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+
+alias lav="la -v"
+alias lag="la --group-directories-first"
 
 alias escmap='setxkbmap -option caps:escape'
 alias groot='cd $(git rev-parse --show-toplevel)'
@@ -15,8 +17,8 @@ alias vim='escmap; vim'
 alias vimide='escmap; vim -c "NERDTree | wincmd w"'
 alias xclip='xclip -selection clipboard'
 
-grepm() { grep $1 ~/Music/tracking/* }
-grepv() { grep $1 ~/Videos/tracking/* }
+musgrep() { grep -i $1 ~/Music/tracking/* }
+vidgrep() { grep -i $1 ~/Videos/tracking/* }
 
 gsdel() {
 	if [[ -z $1 ]]; then
@@ -36,18 +38,6 @@ gsup() {
 	fi
 }
 
-otbkup() {
-	if [[ $1 == "-copy" ]]; then
-		xclip -selection clipboard < ~/Documents/onetab/backup
-	elif [[ $1 == "-merge" ]]; then
-		awk "NF" ~/Documents/onetab/backup > backup-temp
-		mv backup-temp ~/Documents/onetab/backup
-	else
-		xclip -selection clipboard -out > ~/Documents/onetab/backup
-	fi
-	head -5 ~/Documents/onetab/backup
-}
-
 pkgup() {
 	if [[ `uname` == "Linux" ]]; then
 		sudo apt update
@@ -64,32 +54,28 @@ pkgup() {
 tland() {
 	if [[ $1 == "-reverse" ]]; then
 		tmux split-window -t 0.0 -h -p 60
-		tmux split-window -t 0.0 -v -p 70
-		tmux split-window -t 0.1 -v -p 70
-		tmux send-keys -t 0.0 "htop -d 5" C-m
-		tmux send-keys -t 0.1 "vis" C-m
-		tmux send-keys -t 0.2 "cmus" C-m
-		tmux send-keys -t 0.3 "vim -c q; reset" C-m
-		tmux select-pane -t 3
+		tmux split-window -t 0.0 -v
+		tmux resize-pane -t 0.0 -y 8
+		tmux send-keys -t 0.0 "sleep 2.50 && htop -d 5" C-m
+		tmux send-keys -t 0.1 "sleep 2.50 && cmus" C-m
+		tmux send-keys -t 0.2 "sleep 0.25 && vim -c q && clear" C-m
+		tmux select-pane -t 2
 	else
 		tmux split-window -t 0.0 -h -p 40
-		tmux split-window -t 0.1 -v -p 70
-		tmux split-window -t 0.2 -v -p 70
-		tmux send-keys -t 0.0 "vim -c q; reset" C-m
-		tmux send-keys -t 0.1 "htop -d 5" C-m
-		tmux send-keys -t 0.2 "vis" C-m
-		tmux send-keys -t 0.3 "cmus" C-m
+		tmux split-window -t 0.1 -v
+		tmux resize-pane -t 0.1 -y 8
+		tmux send-keys -t 0.0 "sleep 0.25 && vim -c q && clear" C-m
+		tmux send-keys -t 0.1 "sleep 2.50 && htop -d 5" C-m
+		tmux send-keys -t 0.2 "sleep 2.50 && cmus" C-m
 		tmux select-pane -t 0
 	fi
 }
 
 tport() {
-	tmux split-window -t 0.0 -v -p 80
+	tmux split-window -t 0.0 -v
+	tmux resize-pane -t 0.0 -y 8
 	tmux new-window
-	tmux split-window -t 1.0 -v
-	tmux resize-pane -t 1.0 -y 7
-	tmux send-keys -t 0.0 "vis" C-m
-	tmux send-keys -t 0.1 "cmus" C-m
-	tmux send-keys -t 1.0 "htop -d 5" C-m
-	tmux send-keys -t 1.1 "vim -c q; reset" C-m
+	tmux send-keys -t 0.0 "sleep 2.50 && htop -d 5" C-m
+	tmux send-keys -t 0.1 "sleep 2.50 && cmus" C-m
+	tmux send-keys -t 1.0 "sleep 0.25 && vim -c q && clear" C-m
 }
