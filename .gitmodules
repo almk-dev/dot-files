@@ -31,9 +31,6 @@
 [submodule "configs/vim/bundle/vim-tmuxline"]
 	path = configs/vim/bundle/vim-tmuxline
 	url = git@github.com:edkolev/tmuxline.vim.git
-[submodule "resources/repos/cli-visualizer"]
-	path = resources/repos/cli-visualizer
-	url = git@github.com:dpayne/cli-visualizer.git
 [submodule "configs/oh-my-zsh"]
 	path = configs/oh-my-zsh
 	url = git@github.com:robbyrussell/oh-my-zsh.git
