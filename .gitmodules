@@ -10,9 +10,6 @@
 [submodule "configs/vim/bundle/vim-gruvbox"]
 	path = configs/vim/bundle/vim-gruvbox
 	url = git@github.com:morhetz/gruvbox.git
-[submodule "configs/vim/bundle/vim-nerdtree."]
-	path = configs/vim/bundle/vim-nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
 [submodule "configs/vim/bundle/vim-nerdtree-git-plugin"]
 	path = configs/vim/bundle/vim-nerdtree-git-plugin
 	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
