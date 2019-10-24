@@ -60,12 +60,6 @@ install-list
 	history.log:Commandline: apt install exfat-fuse exfat-utils
 	history.log.6.gz:Commandline: apt install ruby-dev
 
-remove-list
-	history.log:Commandline: apt purge firefox firefox-locale-en
-	history.log:Commandline: apt purge gnome-shell-extension-desktop-icons gnome-shell-extension-ubuntu-dock
-	history.log:Commandline: apt purge youtube-dl
-	history.log:Commandline: apt purge transmission
-
 gsettings
 	gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 25
 	gsettings set org.gnome.desktop.peripherals.keyboard delay 500
