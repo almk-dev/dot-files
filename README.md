@@ -1,5 +1,5 @@
 # dot-files
-Linux dot-files (and more) across all my machines
+Linux dot-files across all my machines
 
 Currently, all my machines are running **Pop!_OS**, with **GNOME**. I use **gnome-tweaks** and
 **arc-theme** for the visual flavor, with **Arc-Darker** as the application theme variant. I also
