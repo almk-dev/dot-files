@@ -4,7 +4,9 @@ if [[ `uname` == 'Linux' ]]; then
 	for file in $cwd/configs/*; do
 		ln -snfv `dirname $file/.` ~/.`basename $file`
 	done
-	cp --verbose -r $cwd/resources/fonts/* ~/.fonts/
+	for file in $cwd/resources/*; do
+		ln -snfv `dirname $file/.` ~/.`basename $file`
+	done
 else
 	echo 'Operating system not supported'
 fi
