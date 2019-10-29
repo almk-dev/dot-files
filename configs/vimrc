@@ -14,32 +14,29 @@ call plug#end()
 "let g:airline#extensions#tabline#tab_nr_type = 1
 "let g:airline#extensions#tabline#buffer_nr_show = 1
 
-" FINAL
-"
 let g:airline_powerline_fonts=1
 let g:airline_theme='powerlineish'
-let g:DevIconsEnableFoldersOpenClose=1
 let g:NERDTreeMinimalUI=1
 let g:WebDevIconsNerdTreeAfterGlyphPadding='  '
 let g:WebDevIconsUnicodeDecorateFolderNodes=1
 
 colorscheme gruvbox
+set background=dark
+set term=xterm-256color
+
 filetype indent on
 filetype plugin on
 syntax enable
 
-map <space> :
 
 " FINAL
 set autoindent
-set background=dark
 set noexpandtab " important to decide later
 set nowrap
 set number
 set smartindent
 set splitbelow
 set splitright
-set term=xterm-256color
 set textwidth=100
 set ttimeoutlen=25
 set updatetime=25
@@ -58,6 +55,8 @@ set wildmenu
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
+
+map <space> :
 
 highlight Normal				ctermbg=None
 highlight SignColumn			ctermbg=None
