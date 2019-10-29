@@ -6,11 +6,7 @@ Emulator: GNOME-Terminal / Colors: Gruvbox-based\
 Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched glyphs
 
 ### pending
-`weechat`,`cowsay`,`screenfetch`,`unison`/`samba`\
-`runtimes`: `python`, `pip`, `build-essential`, `make`, `automake`, `gcc`, `java`
-`android-file-transfer`,`gcc`,`gimp`,`latex`,`python`,`spotify`,`textual`,`vlc`\
-`weechat`,`cowsay`,`screenfetch`,`unison`/`samba`\
-`runtimes`: `python`,`pip`,`build-essential`,`make`,`automake`,`gcc`,`java`
+`weechat`,`cowsay`,`screenfetch`,`latex`, `gimp`
 
 ### install
 -	history.log:Commandline: apt install exfat-fuse exfat-utils
