@@ -25,6 +25,7 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 ## install-list
 #### appimage
 - kdenlive
+
 #### apt
 - chrome-gnome-shell
 - cmus
@@ -42,6 +43,7 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - xclip
 - youtube-dl
 - zsh
+
 #### deb/ppa
 - atom
 - discord
