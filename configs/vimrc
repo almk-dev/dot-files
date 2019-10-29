@@ -1,12 +1,12 @@
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
-Plug 'airblade/vim-gitgutter',{'as':'gitgutter'}
 Plug 'scrooloose/nerdtree'
 Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'edkolev/tmuxline.vim',{'as':'tmuxline'}
 Plug 'vim-airline/vim-airline',{'as':'airline'}
 Plug 'vim-airline/vim-airline-themes',{'as':'airline-themes'}
 Plug 'ryanoasis/vim-devicons',{'as':'devicons'}
+Plug 'airblade/vim-gitgutter',{'as':'gitgutter'}
 call plug#end()
 
 "let g:airline#extensions#tabline#formatter='unique_tail'
