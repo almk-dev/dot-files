@@ -14,10 +14,10 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - `gsettings set org.gnome.desktop.peripherals.mouse speed 0.0`
 
 ## install-list
-###### appimage
+#### appimage
 - kdenlive
 
-###### apt
+#### apt
 - chrome-gnome-shell
 - cmus
 - curl
@@ -35,19 +35,19 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - youtube-dl
 - zsh
 
-###### deb/ppa
+#### deb/ppa
 - atom
 - discord
 - syncthing
 
 ## unsorted
 
-###### yet to be added
+#### yet to be added
 - `gimp`, `darktable (or alt)`
 
-######### pending
+#### pending
 `weechat`,`cowsay`,`screenfetch`,`latex`, `gimp`
 
-###### install
+#### install
 - history.log:Commandline: apt install exfat-fuse exfat-utils
 - history.log.6.gz:Commandline: apt install ruby-dev
