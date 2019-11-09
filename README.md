@@ -43,7 +43,7 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 ## unsorted
 
 #### yet to be added
-- `gimp`, `darktable (or alt)`
+- `gimp`,`darktable (or alternative)`,`exfat-utils`,`exfat-fuse`
 
 #### pending
 `weechat`,`cowsay`,`screenfetch`,`latex`, `gimp`
