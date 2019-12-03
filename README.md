@@ -5,13 +5,24 @@ OS: Ubuntu-19.10 / DE: GNOME-3.34.1 / Theme: Yaru-dark\
 Emulator: GNOME-Terminal / Colors: Gruvbox-based\
 Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched glyphs
 
-
 ### configurations
 - `gsettings set org.gnome.desktop.interface cursor-blink-time 500`
+- `gsettings set org.gnome.desktop.interface cursor-blink-timeout 500`
 - `gsettings set org.gnome.desktop.peripherals.keyboard delay 500`
 - `gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 25`
 - `gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat`
 - `gsettings set org.gnome.desktop.peripherals.mouse speed 0.0`
+
+### extensions
+#### user
+- AlternateTab
+- CPU Power Manager
+- Hide Top Bar
+- Sound Input & Output Device Chooser
+#### default
+- Desktop Icons
+- Ubuntu AppIndicators
+- Ubuntu Dock
 
 ## install-list
 #### appimage
