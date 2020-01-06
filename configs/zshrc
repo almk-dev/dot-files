@@ -9,6 +9,7 @@ alias escmap='setxkbmap -option caps:escape'
 alias groot='cd $(git rev-parse --show-toplevel)'
 alias lag="la --group-directories-first"
 alias lav="la -v"
+alias lofi='mpv --no-video https://youtu.be/hHW1oY26kxQ'
 alias open='xdg-open'
 alias rall='cd ~/Documents/repositories/'
 alias rdot='cd ~/Documents/repositories/dot-files'
