@@ -18,16 +18,16 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - AlternateTab
 - CPU Power Manager
 - Hide Top Bar
+- Impatience
 - Sound Input & Output Device Chooser
+- User Themes
+
 #### default
 - Desktop Icons
 - Ubuntu AppIndicators
 - Ubuntu Dock
 
 ## install-list
-#### appimage
-- kdenlive
-
 #### apt
 - chrome-gnome-shell
 - cmus
@@ -50,6 +50,10 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - atom
 - discord
 - syncthing
+
+#### user
+- anki
+- kdenlive
 
 ## unsorted
 
