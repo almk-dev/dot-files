@@ -51,22 +51,9 @@ pkgup() {
 	fi
 }
 
-tland() {
-	tmux split-window -t 0.0 -h -p 40
-	tmux split-window -t 0.1 -v
-	tmux resize-pane -t 0.1 -y 8
-	tmux send-keys -t 0.0 "sleep 0.25 && vim -c q && clear" C-m
-	tmux send-keys -t 0.1 "sleep 2.50 && htop -d 5" C-m
-	tmux send-keys -t 0.2 "sleep 2.50 && cmus" C-m
-	tmux select-pane -t 0
-}
-
-tport() {
-	tmux split-window -t 0.0 -v
-	tmux resize-pane -t 0.0 -y 8
+tstack() {
 	tmux new-window
-	tmux send-keys -t 0.0 "sleep 2.50 && htop -d 5" C-m
-	tmux send-keys -t 0.1 "sleep 2.50 && cmus" C-m
+	tmux send-keys -t 0.0 "sleep 0.50 && cmus" C-m
 	tmux send-keys -t 1.0 "sleep 0.25 && vim -c q && clear" C-m
 }
 
