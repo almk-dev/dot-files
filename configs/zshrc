@@ -51,7 +51,7 @@ pkgup() {
 	fi
 }
 
-tstack() {
+tup() {
 	tmux new-window
 	tmux send-keys -t 0.0 "sleep 0.50 && cmus" C-m
 	tmux send-keys -t 1.0 "sleep 0.25 && vim -c q && clear" C-m
