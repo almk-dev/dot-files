@@ -34,10 +34,11 @@ set smartindent
 set splitbelow
 set splitright
 set textwidth=100
-set ttimeoutlen=25
-set updatetime=25
+"set ttimeoutlen=25
+"set updatetime=25
 
 " TENTATIVE
+set ttymouse=xterm2
 set backspace=2
 set colorcolumn=+1
 set cursorline

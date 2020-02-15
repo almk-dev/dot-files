@@ -1,0 +1,15 @@
+#!/bin/bash
+cwd=$(pwd)
+if [[ `uname` == 'Linux' ]]; then
+	for file in $cwd/home/*; do
+		if [[ `basename $file` == 'config' ]]; then
+			for file in $cwd/home/config/*; do
+				ln -snfv `dirname $file/.` ~/.config/`basename $file`
+			done
+		else
+			ln -snfv `dirname $file/.` ~/.`basename $file`
+		fi
+	done
+else
+	echo 'OS not supported'
+fi
