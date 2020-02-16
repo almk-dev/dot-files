@@ -28,6 +28,8 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - Ubuntu Dock
 
 ## install-list
+#### apt-stock
+- firefox
 #### apt
 - chrome-gnome-shell
 - cmus
@@ -47,8 +49,10 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - zsh
 
 #### deb/ppa
+- alacritty
 - atom
 - discord
+- foliate
 - syncthing
 
 #### user
