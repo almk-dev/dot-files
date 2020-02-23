@@ -1,17 +1,15 @@
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'			,{'as':'airline'}
-Plug 'vim-airline/vim-airline-themes'	,{'as':'airline-themes'}
 Plug 'ryanoasis/vim-devicons'			,{'as':'devicons'}
 Plug 'tpope/vim-fugitive'				,{'as':'fugitive'}
 Plug 'airblade/vim-gitgutter'			,{'as':'gitgutter'}
 Plug 'morhetz/gruvbox'					,{'as':'gruvbox'}
 Plug 'preservim/nerdtree'				,{'as':'nerdtree'}
-Plug 'xuyuanp/nerdtree-git-plugin'		,{'as':'nerdtree-git-plugin'}
 Plug 'edkolev/tmuxline.vim'				,{'as':'tmuxline'}
 call plug#end()
 
 let g:airline_powerline_fonts=1
-let g:airline_theme='powerlineish'
+let g:airline_theme='dark'
 let g:airline#extensions#tabline#enabled = 1
 let g:NERDTreeMinimalUI=1
 
