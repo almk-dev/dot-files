@@ -12,6 +12,7 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - `gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 25`
 - `gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat`
 - `gsettings set org.gnome.desktop.peripherals.mouse speed 0.0`
+- `gsettings set org.gnome.desktop.peripherals.touchpad speed 1.0`
 
 ### extensions
 #### user
@@ -42,6 +43,7 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - python3-pip
 	- youtube-dl
 - qbittorrent
+- ranger <!-- tentative -->
 - tmux
 - vim
 - xclip

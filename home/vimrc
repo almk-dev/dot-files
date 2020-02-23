@@ -1,20 +1,19 @@
 call plug#begin('~/.vim/plugged')
-Plug 'morhetz/gruvbox'
-Plug 'preservim/nerdtree'
-Plug 'xuyuanp/nerdtree-git-plugin'
-Plug 'edkolev/tmuxline.vim',{'as':'tmuxline'}
-Plug 'vim-airline/vim-airline',{'as':'airline'}
-Plug 'vim-airline/vim-airline-themes',{'as':'airline-themes'}
-Plug 'bling/vim-bufferline',{'as':'bufferline'}
-Plug 'ryanoasis/vim-devicons',{'as':'devicons'}
-Plug 'airblade/vim-gitgutter',{'as':'gitgutter'}
+Plug 'vim-airline/vim-airline'			,{'as':'airline'}
+Plug 'vim-airline/vim-airline-themes'	,{'as':'airline-themes'}
+Plug 'ryanoasis/vim-devicons'			,{'as':'devicons'}
+Plug 'tpope/vim-fugitive'				,{'as':'fugitive'}
+Plug 'airblade/vim-gitgutter'			,{'as':'gitgutter'}
+Plug 'morhetz/gruvbox'					,{'as':'gruvbox'}
+Plug 'preservim/nerdtree'				,{'as':'nerdtree'}
+Plug 'xuyuanp/nerdtree-git-plugin'		,{'as':'nerdtree-git-plugin'}
+Plug 'edkolev/tmuxline.vim'				,{'as':'tmuxline'}
 call plug#end()
 
 let g:airline_powerline_fonts=1
 let g:airline_theme='powerlineish'
+let g:airline#extensions#tabline#enabled = 1
 let g:NERDTreeMinimalUI=1
-let g:WebDevIconsNerdTreeAfterGlyphPadding='  '
-let g:WebDevIconsUnicodeDecorateFolderNodes=1
 
 colorscheme gruvbox
 set background=dark
@@ -26,16 +25,22 @@ syntax enable
 
 
 " FINAL
+set number
+set relativenumber
+
 set autoindent
 set noexpandtab " important to decide later
 set nowrap
-set number
 set smartindent
 set splitbelow
 set splitright
 set textwidth=100
-"set ttimeoutlen=25
-"set updatetime=25
+
+"set timeout=1000
+"set ttimeout=1000
+"set timeoutlen=1000
+set ttimeoutlen=100
+set updatetime=100
 
 " TENTATIVE
 set ttymouse=xterm2
@@ -52,8 +57,6 @@ set wildmenu
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-
-noremap <space> :
 
 highlight Normal				ctermbg=None
 highlight SignColumn			ctermbg=None
