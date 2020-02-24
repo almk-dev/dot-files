@@ -2,6 +2,6 @@
 	name = abdl-dev
 	email = me@abdl.dev
 [color]
-	ui = true
+	ui = auto
 [push]
 	default = simple

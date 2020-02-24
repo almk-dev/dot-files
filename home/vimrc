@@ -21,8 +21,7 @@ filetype indent on
 filetype plugin on
 syntax enable
 
-
-" FINAL
+" WIP ===========================================================================================
 set number
 set relativenumber
 
