@@ -52,7 +52,6 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 
 #### deb/ppa
 - alacritty
-- atom
 - discord
 - foliate
 - syncthing
