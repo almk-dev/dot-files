@@ -1,4 +1,5 @@
 *.swp
 /home/config/
 /home/fonts/
+/home/oh-my-zsh/
 /home/vim/
