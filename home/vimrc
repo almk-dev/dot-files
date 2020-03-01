@@ -23,7 +23,7 @@ syntax enable
 
 " WIP ===========================================================================================
 set number
-set relativenumber
+"set relativenumber
 
 set autoindent
 set noexpandtab " important to decide later

@@ -9,12 +9,11 @@ alias escmap='setxkbmap -option caps:escape'
 alias groot='cd $(git rev-parse --show-toplevel)'
 alias lag="la --group-directories-first"
 alias lav="la -v"
-alias lofi='mpv --no-video https://youtu.be/5qap5aO4i9A'
+alias mpvnv='mpv --no-video'
 alias open='xdg-open'
 alias rall='cd ~/Documents/repositories/'
 alias rdot='cd ~/Documents/repositories/dot-files'
-alias vim='escmap; vim'
-alias vimide='escmap; vim -c "NERDTree | wincmd w"'
+alias vimide='vim -c "NERDTree | wincmd w"'
 alias xclip='xclip -selection clipboard'
 
 musgrep() { grep -i $1 ~/Music/tracking/* }
