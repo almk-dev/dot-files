@@ -1,7 +1,4 @@
 *.swp
-/home/config/alacritty/*
-/home/config/cmus/*
-/home/fonts/*
-/home/vim/*
-!/home/config/alacritty/alacritty.yml
-!/home/config/cmus/autosave
+/home/config/
+/home/fonts/
+/home/vim/
