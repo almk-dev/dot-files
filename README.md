@@ -1,8 +1,7 @@
 # dot-files
 Linux dot-files across all my machines
 
-OS: Ubuntu-19.10 / DE: GNOME-3.34.1 / Theme: Yaru-dark\
-Emulator: GNOME-Terminal / Colors: Gruvbox-based\
+Emulator: Alacritty
 Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched glyphs
 
 ### configurations
@@ -16,8 +15,6 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 
 ### extensions
 #### user
-- AlternateTab
-- CPU Power Manager
 - Hide Top Bar
 - Impatience
 - Sound Input & Output Device Chooser
@@ -29,8 +26,6 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - Ubuntu Dock
 
 ## install-list
-#### apt-stock
-- firefox
 #### apt
 - chrome-gnome-shell
 - cmus
@@ -43,7 +38,6 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - python3-pip
 	- youtube-dl
 - qbittorrent
-- ranger
 - tmux
 - vim
 - xclip
@@ -52,16 +46,12 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 
 #### deb/ppa
 - alacritty
+- chrome
 - discord
 - foliate
 - syncthing
 
-#### user
-- anki
-- kdenlive
-
 ## unsorted
-
 #### yet to be added
 - `gimp`,`darktable (or alternative)`,`exfat-utils`,`exfat-fuse`
 
