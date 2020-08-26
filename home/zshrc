@@ -33,7 +33,7 @@ gsup() {
 	fi
 }
 
-muslib() {
+mlib() {
 	if [[ $1 == "-append" ]]; then
 		echo $2 >> ~/Music/tracking/research
 		tail ~/Music/tracking/research
@@ -55,7 +55,7 @@ pkgup() {
 	fi
 }
 
-vidlib() {
+vlib() {
 	if [[ $1 == "-append" ]]; then
 		echo $2 >> ~/Videos/tracking/research
 		tail ~/Videos/tracking/research
