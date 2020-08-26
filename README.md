@@ -4,15 +4,6 @@ Linux dot-files across all my machines
 Emulator: Alacritty
 Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched glyphs
 
-### configurations
-- `gsettings set org.gnome.desktop.interface cursor-blink-time 500`
-- `gsettings set org.gnome.desktop.interface cursor-blink-timeout 500`
-- `gsettings set org.gnome.desktop.peripherals.keyboard delay 500`
-- `gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 25`
-- `gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat`
-- `gsettings set org.gnome.desktop.peripherals.mouse speed 0.0`
-- `gsettings set org.gnome.desktop.peripherals.touchpad speed 1.0`
-
 ### extensions
 #### user
 - Hide Top Bar
@@ -57,7 +48,3 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 
 #### pending
 `weechat`,`cowsay`,`screenfetch`,`latex`, `gimp`
-
-#### install
-- history.log:Commandline: apt install exfat-fuse exfat-utils
-- history.log.6.gz:Commandline: apt install ruby-dev

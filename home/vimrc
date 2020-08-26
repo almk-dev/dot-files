@@ -55,8 +55,6 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 
-noremap <space> :
-
 highlight Normal				ctermbg=None
 highlight SignColumn			ctermbg=None
 highlight GitGutterAdd			ctermbg=None

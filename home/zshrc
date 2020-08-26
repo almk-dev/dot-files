@@ -1,11 +1,9 @@
 export TERM="xterm-256color"
 export ZSH=$HOME/.oh-my-zsh/
-ZSH_THEME=eastwood
-ZSH_THEME_RANDOM_CANDIDATES=(eastwood nanotech terminalparty)
+ZSH_THEME=terminalparty
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-alias escmap='setxkbmap -option caps:escape'
 alias groot='cd $(git rev-parse --show-toplevel)'
 alias lag="la --group-directories-first"
 alias lav="la -v"
@@ -13,11 +11,9 @@ alias mpvnv='mpv --no-video'
 alias open='xdg-open'
 alias rall='cd ~/Documents/repositories/'
 alias rdot='cd ~/Documents/repositories/dot-files'
-alias vimide='vim -c "NERDTree | wincmd w"'
+alias scon='find ~ -name "*.sync*"'
+alias vimide='vim +NERDTree +wincmd\ w'
 alias xclip='xclip -selection clipboard'
-
-musgrep() { grep -i $1 ~/Music/tracking/* }
-vidgrep() { grep -i $1 ~/Videos/tracking/* }
 
 gsdel() {
 	if [[ -z $1 ]]; then
@@ -27,46 +23,43 @@ gsdel() {
 		git submodule deinit --force -- $gspath
 		rm -rf .git/modules/$gspath
 		git rm -rf $gspath
-		git commit -am "remove submodule $gspath"
+		git commit -am "gsdel: remove submodule $gspath"
 	fi
 }
 
 gsup() {
 	if [[ $(git submodule update --recursive --remote) ]]; then
-		git commit -am "update submodules to upstream"
+		git commit -am "gsup: update submodules to upstream"
+	fi
+}
+
+muslib() {
+	if [[ $1 == "-append" ]]; then
+		echo $2 >> ~/Music/tracking/research
+		tail ~/Music/tracking/research
+	else
+		grep -i $1 ~/Music/tracking/*
 	fi
 }
 
 pkgup() {
-	if [[ `uname` == "Linux" ]]; then
-		sudo apt update
-		sudo apt upgrade
-		sudo apt full-upgrade
-		sudo apt autoclean
-		sudo apt autoremove
+	sudo apt update
+	sudo apt upgrade
+	sudo apt full-upgrade
+	sudo apt autoclean
+	sudo apt autoremove --purge
+	if [[ $1 == "-all" ]]; then
+		omz update
 		pip3 install --upgrade youtube-dl
-		vim -c "PlugUpdate | PlugUpgrade | qa"
-		git -C ~/.oh-my-zsh/ pull
-	else
-		echo "Operating system not supported"
+		vim +PlugUpdate +PlugUpgrade +qa
 	fi
 }
 
-tmup() {
-	tmux new-window
-	tmux send-keys -t 0.0 "cmus" C-m
-	tmux send-keys -t 1.0 "vim -c q; clear" C-m
+vidlib() {
+	if [[ $1 == "-append" ]]; then
+		echo $2 >> ~/Videos/tracking/research
+		tail ~/Videos/tracking/research
+	else
+		grep -i $1 ~/Videos/tracking/*
+	fi
 }
-
-# OBSOLETE -> OneTab is no longer used as part of workflow
-# otbkup() {
-# 	if [[ $1 == "--copy" ]]; then
-# 		xclip -selection clipboard < ~/Documents/onetab/backup
-# 	elif [[ $1 == "--merge" ]]; then
-# 		awk "NF" ~/Documents/onetab/backup > backup-temp
-# 		mv backup-temp ~/Documents/onetab/backup
-# 	else
-# 		xclip -selection clipboard -out > ~/Documents/onetab/backup
-# 	fi
-# 	head -5 ~/Documents/onetab/backup
-# }
