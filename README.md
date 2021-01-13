@@ -41,6 +41,7 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - discord
 - foliate
 - syncthing
+- vscode
 
 ## unsorted
 #### yet to be added

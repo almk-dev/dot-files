@@ -11,7 +11,7 @@ alias mpvnv='mpv --no-video'
 alias open='xdg-open'
 alias rall='cd ~/Documents/repositories/'
 alias rdot='cd ~/Documents/repositories/dot-files'
-alias scon='find ~ -name "*.sync*"'
+alias scon='find ~ -name "*.sync-conflict*"'
 alias vimide='vim +NERDTree +wincmd\ w'
 alias xclip='xclip -selection clipboard'
 
