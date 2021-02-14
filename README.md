@@ -43,6 +43,14 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - syncthing
 - vscode
 
+### new
+- texlive
+- ruby-full
+	- gem install bundler jekyll
+	- bundle install gh-pages
+- exfat-fuse
+- exfat-utils
+
 ## unsorted
 #### yet to be added
 `gimp`,`darktable (or alternative)`,`exfat-utils`,`exfat-fuse`
