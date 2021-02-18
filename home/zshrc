@@ -34,11 +34,11 @@ gsup() {
 }
 
 mlib() {
-	if   [[ $1 == "-a" || $1 == "--append" ]]; then
+	if   [[ $1 == "-m" || $1 == "--cmus" ]]; then
+		grep -i $2 ~/.config/cmus/lib.pl
+	elif [[ $1 == "-a" || $1 == "--append" ]]; then
 		echo $2 >> ~/Music/tracking/research
 		tail ~/Music/tracking/research
-	elif [[ $1 == "-m" || $1 == "--cmus" ]]; then
-		grep -i $2 ~/.config/cmus/lib.pl
 	elif [[ $1 == "-c" || $1 == "--count" ]]; then
 		cat ~/Music/tracking/* | wc -l
 	elif [[ $1 == "-s" || $1 == "--shuffle" ]]; then
