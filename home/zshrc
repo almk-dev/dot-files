@@ -34,14 +34,14 @@ gsup() {
 }
 
 mlib() {
-	if [[ $1 == "--append" || $1 == "-a" ]]; then
+	if   [[ $1 == "-a" || $1 == "--append" ]]; then
 		echo $2 >> ~/Music/tracking/research
 		tail ~/Music/tracking/research
-	elif [[ $1 == "--cmus" || $1 == "-m" ]]; then
+	elif [[ $1 == "-m" || $1 == "--cmus" ]]; then
 		grep -i $2 ~/.config/cmus/lib.pl
-	elif [[ $1 == "--count" || $1 == "-c" ]]; then
+	elif [[ $1 == "-c" || $1 == "--count" ]]; then
 		cat ~/Music/tracking/* | wc -l
-	elif [[ $1 == "--shuffle" || $1 == "-s" ]]; then
+	elif [[ $1 == "-s" || $1 == "--shuffle" ]]; then
 		if [[ -z $2 ]]; then
 			cat ~/Music/tracking/* | shuf -n 1
 		else
@@ -66,12 +66,12 @@ pkgup() {
 }
 
 vlib() {
-	if [[ $1 == "--append" || $1 == "-a" ]]; then
+	if   [[ $1 == "-a" || $1 == "--append" ]]; then
 		echo $2 >> ~/Videos/tracking/research
 		tail ~/Videos/tracking/research
-	elif [[ $1 == "--count" || $1 == "-c" ]]; then
+	elif [[ $1 == "-c" || $1 == "--count" ]]; then
 		cat ~/Videos/tracking/* | wc -l
-	elif [[ $1 == "--shuffle" || $1 == "-s" ]]; then
+	elif [[ $1 == "-s" || $1 == "--shuffle" ]]; then
 		if [[ -z $2 ]]; then
 			cat ~/Videos/tracking/* | shuf -n 1
 		else
