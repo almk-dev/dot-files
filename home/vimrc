@@ -40,6 +40,8 @@ set ttimeoutlen=100
 set updatetime=100
 
 " TENTATIVE
+set ignorecase
+set smartcase
 set ttymouse=xterm2
 set backspace=2
 set colorcolumn=+1
