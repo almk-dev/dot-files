@@ -21,6 +21,8 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - chrome-gnome-shell
 - cmus
 - curl
+- exfat-fuse
+- exfat-utils
 - git
 - gnome-tweaks
 - htop
@@ -29,6 +31,9 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - python3-pip
 	- youtube-dl
 - qbittorrent
+- rhythmbox
+- ruby-full
+- texlive
 - tmux
 - vim
 - xclip
@@ -43,13 +48,10 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - syncthing
 - vscode
 
-### new
-- texlive
-- ruby-full
-	- gem install bundler jekyll
-	- bundle install gh-pages
-- exfat-fuse
-- exfat-utils
+### gem
+- bundler
+- gh-pages
+- jekyll
 
 ## unsorted
 #### yet to be added
