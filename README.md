@@ -31,7 +31,6 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - python3-pip
 	- youtube-dl
 - qbittorrent
-- rhythmbox
 - ruby-full
 - texlive
 - tmux
