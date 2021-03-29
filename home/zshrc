@@ -9,8 +9,8 @@ alias lag="la --group-directories-first"
 alias lav="la -v"
 alias mpvnv='mpv --no-video'
 alias open='xdg-open'
-alias repall='cd ~/Documents/repositories/'
-alias repdot='cd ~/Documents/repositories/dot-files'
+alias repall='cd ~/Documents/repos/'
+alias repdot='cd ~/Documents/repos/dot-files'
 alias scon='find ~ -name "*.sync-conflict*"'
 alias vimide='vim +NERDTree +wincmd\ w'
 alias xclip='xclip -selection clipboard'
@@ -37,20 +37,20 @@ mlib() {
 	if   [[ $1 == "-m" || $1 == "--cmus" ]]; then
 		grep -i $2 ~/.config/cmus/lib.pl
 	elif [[ $1 == "-a" || $1 == "--append" ]]; then
-		echo $2 >> ~/Music/tracking/research
-		tail ~/Music/tracking/research
+		echo $2 >> ~/Music/.tracking/research
+		tail ~/Music/.tracking/research
 	elif [[ $1 == "-e" || $1 == "--edit" ]]; then
-		vim ~/Music/tracking/research
+		vim ~/Music/.tracking/research
 	elif [[ $1 == "-c" || $1 == "--count" ]]; then
-		cat ~/Music/tracking/* | wc -l
+		cat ~/Music/.tracking/* | wc -l
 	elif [[ $1 == "-s" || $1 == "--shuffle" ]]; then
 		if [[ -z $2 ]]; then
-			cat ~/Music/tracking/* | shuf -n 1
+			cat ~/Music/.tracking/* | shuf -n 1
 		else
-			cat ~/Music/tracking/* | shuf -n $2
+			cat ~/Music/.tracking/* | shuf -n $2
 		fi
 	else
-		grep -i $1 ~/Music/tracking/*
+		grep -i $1 ~/Music/.tracking/*
 	fi
 }
 
@@ -69,19 +69,19 @@ pkgup() {
 
 vlib() {
 	if   [[ $1 == "-a" || $1 == "--append" ]]; then
-		echo $2 >> ~/Videos/tracking/research
-		tail ~/Videos/tracking/research
+		echo $2 >> ~/Videos/.tracking/research
+		tail ~/Videos/.tracking/research
 	elif [[ $1 == "-e" || $1 == "--edit" ]]; then
-		vim ~/Videos/tracking/research
+		vim ~/Videos/.tracking/research
 	elif [[ $1 == "-c" || $1 == "--count" ]]; then
-		cat ~/Videos/tracking/* | wc -l
+		cat ~/Videos/.tracking/* | wc -l
 	elif [[ $1 == "-s" || $1 == "--shuffle" ]]; then
 		if [[ -z $2 ]]; then
-			cat ~/Videos/tracking/* | shuf -n 1
+			cat ~/Videos/.tracking/* | shuf -n 1
 		else
-			cat ~/Videos/tracking/* | shuf -n $2
+			cat ~/Videos/.tracking/* | shuf -n $2
 		fi
 	else
-		grep -i $1 ~/Videos/tracking/*
+		grep -i $1 ~/Videos/.tracking/*
 	fi
 }
