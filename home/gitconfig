@@ -1,9 +1,9 @@
 [user]
-	name = abdl-dev
-	email = me@abdl.dev
+    name = abdl-dev
+    email = me@abdl.dev
 [color]
-	ui = auto
+    ui = auto
 [push]
-	default = simple
+    default = simple
 [pull]
-	rebase = false
+    rebase = false

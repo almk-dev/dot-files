@@ -1,17 +1,25 @@
 call plug#begin('~/.vim/plugged')
-Plug 'vim-airline/vim-airline'			,{'as':'airline'}
-Plug 'ryanoasis/vim-devicons'			,{'as':'devicons'}
-Plug 'tpope/vim-fugitive'				,{'as':'fugitive'}
-Plug 'airblade/vim-gitgutter'			,{'as':'gitgutter'}
-Plug 'morhetz/gruvbox'					,{'as':'gruvbox'}
-Plug 'preservim/nerdtree'				,{'as':'nerdtree'}
-Plug 'edkolev/tmuxline.vim'				,{'as':'tmuxline'}
+Plug 'vim-airline/vim-airline'  ,{'as':'airline'}
+Plug 'lambdalisue/fern.vim'     ,{'as':'fern'}
+Plug 'tpope/vim-fugitive'       ,{'as':'fugitive'}
+Plug 'airblade/vim-gitgutter'   ,{'as':'gitgutter'}
+Plug 'morhetz/gruvbox'          ,{'as':'gruvbox'}
+Plug 'edkolev/tmuxline.vim'     ,{'as':'tmuxline'}
 call plug#end()
+
+function! s:init_fern() abort
+    set nonumber
+    set norelativenumber
+endfunction
+
+augroup fern-custom
+    autocmd! *
+    autocmd FileType fern call s:init_fern()
+augroup END
 
 let g:airline_powerline_fonts=1
 let g:airline_theme='dark'
-let g:airline#extensions#tabline#enabled = 1
-let g:NERDTreeMinimalUI=1
+let g:fern#hide_cursor = 1
 
 colorscheme gruvbox
 set background=dark
@@ -23,15 +31,20 @@ syntax enable
 
 " WIP ===========================================================================================
 set number
-"set relativenumber
+set switchbuf=useopen
 
 set autoindent
-set noexpandtab " important to decide later
+set textwidth=100
+set colorcolumn=+1
 set nowrap
 set smartindent
 set splitbelow
 set splitright
-set textwidth=100
+
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
 "set timeout=1000
 "set ttimeout=1000
@@ -44,7 +57,6 @@ set ignorecase
 set smartcase
 set ttymouse=xterm2
 set backspace=2
-set colorcolumn=+1
 set cursorline
 set hlsearch
 set incsearch
@@ -53,13 +65,10 @@ set mouse=a
 set ruler
 set showcmd
 set wildmenu
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
 
-highlight Normal				ctermbg=None
-highlight SignColumn			ctermbg=None
-highlight GitGutterAdd			ctermbg=None
-highlight GitGutterDelete		ctermbg=None
-highlight GitGutterChange		ctermbg=None
+highlight Normal                ctermbg=None
+highlight SignColumn            ctermbg=None
+highlight GitGutterAdd          ctermbg=None
+highlight GitGutterDelete       ctermbg=None
+highlight GitGutterChange       ctermbg=None
 highlight GitGutterChangeDelete ctermbg=None

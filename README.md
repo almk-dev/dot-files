@@ -29,10 +29,10 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - mpv
 - picard
 - python3-pip
-	- youtube-dl
+    - youtube-dl
 - qbittorrent
 - ruby-full
-- texlive
+- texlive-full
 - tmux
 - vim
 - xclip
@@ -45,7 +45,6 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - discord
 - foliate
 - syncthing
-- vscode
 
 ### gem
 - bundler

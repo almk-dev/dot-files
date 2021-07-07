@@ -1,11 +1,11 @@
 #!/bin/bash
 cwd=$(pwd)
 for file in $cwd/home/*; do
-	if [[ `basename $file` == 'config' ]]; then
-		for file in $cwd/home/config/*; do
-			ln -snfv `dirname $file/.` ~/.config/`basename $file`
-		done
-	else
-		ln -snfv `dirname $file/.` ~/.`basename $file`
-	fi
+    if [[ `basename $file` == 'config' ]]; then
+        for file in $cwd/home/config/*; do
+            ln -snfv `dirname $file/.` ~/.config/`basename $file`
+        done
+    else
+        ln -snfv `dirname $file/.` ~/.`basename $file`
+    fi
 done
