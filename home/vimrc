@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'  ,{'as':'airline'}
+Plug 'dag/vim-fish'             ,{'as':'fish'}
 Plug 'lambdalisue/fern.vim'     ,{'as':'fern'}
 Plug 'tpope/vim-fugitive'       ,{'as':'fugitive'}
 Plug 'airblade/vim-gitgutter'   ,{'as':'gitgutter'}
@@ -34,8 +35,7 @@ set number
 set switchbuf=useopen
 
 set autoindent
-set textwidth=100
-set colorcolumn=+1
+set colorcolumn=100
 set nowrap
 set smartindent
 set splitbelow
