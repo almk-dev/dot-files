@@ -1,26 +1,14 @@
 call plug#begin('~/.vim/plugged')
-Plug 'vim-airline/vim-airline'  ,{'as':'airline'}
-Plug 'dag/vim-fish'             ,{'as':'fish'}
-Plug 'lambdalisue/fern.vim'     ,{'as':'fern'}
-Plug 'tpope/vim-fugitive'       ,{'as':'fugitive'}
-Plug 'airblade/vim-gitgutter'   ,{'as':'gitgutter'}
-Plug 'morhetz/gruvbox'          ,{'as':'gruvbox'}
-Plug 'edkolev/tmuxline.vim'     ,{'as':'tmuxline'}
+Plug 'vim-airline/vim-airline', {'as':'airline'}
+Plug 'dag/vim-fish'           , {'as':'fish'}
+Plug 'tpope/vim-fugitive'     , {'as':'fugitive'}
+Plug 'airblade/vim-gitgutter' , {'as':'gitgutter'}
+Plug 'morhetz/gruvbox'        , {'as':'gruvbox'}
+Plug 'edkolev/tmuxline.vim'   , {'as':'tmuxline'}
 call plug#end()
-
-function! s:init_fern() abort
-    set nonumber
-    set norelativenumber
-endfunction
-
-augroup fern-custom
-    autocmd! *
-    autocmd FileType fern call s:init_fern()
-augroup END
 
 let g:airline_powerline_fonts=1
 let g:airline_theme='dark'
-let g:fern#hide_cursor = 1
 
 colorscheme gruvbox
 set background=dark
@@ -37,6 +25,8 @@ set switchbuf=useopen
 set autoindent
 set colorcolumn=100
 set nowrap
+set ignorecase
+set smartcase
 set smartindent
 set splitbelow
 set splitright
@@ -53,8 +43,6 @@ set ttimeoutlen=100
 set updatetime=100
 
 " TENTATIVE
-set ignorecase
-set smartcase
 set ttymouse=xterm2
 set backspace=2
 set cursorline
