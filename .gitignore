@@ -1,4 +1,9 @@
 *.swp
-/home/config/
-/home/fonts/
-/home/vim/
+
+/home/config/cmus/*
+!/home/config/cmus/autosave
+
+/home/fonts/.uuid
+
+/home/vim/*
+!/home/vim/autoload/
