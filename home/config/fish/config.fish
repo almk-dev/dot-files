@@ -67,15 +67,3 @@ function vlib
             grep -i $argv[1] ~/Videos/.tracking/*
     end
 end
-
-function gsdel
-end
-
-function gsup
-    set -l submodules (git submodule update --recursive --remote)
-    if test -z submodules
-        echo ayy
-        # git commit -am "Update submodules to upstream (gsup)"
-    end
-end
-
