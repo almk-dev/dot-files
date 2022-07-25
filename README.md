@@ -5,16 +5,8 @@ Emulator: Alacritty
 Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched glyphs
 
 ### extensions
-#### user
 - Hide Top Bar
-- Impatience
-- Sound Input & Output Device Chooser
-- User Themes
-
-#### default
-- Desktop Icons
-- Ubuntu AppIndicators
-- Ubuntu Dock
+- Transparent Top Bar
 
 ## install-list
 #### apt

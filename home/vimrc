@@ -20,6 +20,7 @@ syntax enable
 
 " WIP ===========================================================================================
 set number
+set relativenumber
 set switchbuf=useopen
 
 set autoindent
