@@ -26,7 +26,6 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - npm
 - picard
 - python3-pip
-    - youtube-dl
 - qbittorrent
 - ruby-full
 - simple-scan
@@ -38,9 +37,9 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 
 #### deb/ppa
 - alacritty
-- atom
 - btop
 - chrome
+- code
 - discord
 - foliate
 - syncthing
@@ -50,3 +49,7 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - gh-pages
 - jekyll
 
+### pip
+- mpv-remote-app
+- youtube-dl
+- yt-dlp
