@@ -2,6 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+alias ckrs='~/Documents/tools/tickrs'
 alias groot='cd $(git rev-parse --show-toplevel)'
 alias gst='git status'
 alias lag='la --group-directories-first'
@@ -12,6 +13,7 @@ alias repall='cd ~/Documents/repos/'
 alias repdot='cd ~/Documents/repos/dot-files/'
 alias repsite='cd ~/Documents/repos/abdul-malek-dev.github.io/'
 alias scon='find ~ -name "*.sync*"'
+alias tick='~/Documents/tools/ticker --config ~/.config/ticker/ticker.yml'
 alias xclip='xclip -selection clipboard'
 
 function pkgup

@@ -20,7 +20,6 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - git
 - gnome-tweaks
 - gnome-shell-extension-prefs
-- htop
 - mpv
 - nodejs
 - npm
@@ -35,7 +34,7 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - xclip
 - youtube-dl
 
-#### deb/ppa
+#### deb/ppa/src
 - alacritty
 - btop
 - chrome
@@ -43,6 +42,8 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - discord
 - foliate
 - syncthing
+- ticker
+- tickrs
 
 ### gem
 - bundler
