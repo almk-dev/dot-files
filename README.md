@@ -2,11 +2,7 @@
 Linux dot-files across all my machines
 
 Emulator: Alacritty
-Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched glyphs
-
-### extensions
-- Hide Top Bar
-- Transparent Top Bar
+Font: JetBrains Mono
 
 ## install-list
 #### apt
@@ -41,6 +37,7 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - code
 - discord
 - foliate
+- jellyfin
 - syncthing
 - ticker
 - tickrs
@@ -51,6 +48,5 @@ Font: UbuntuMono w/ [NerdFonts](https://github.com/ryanoasis/nerd-fonts) patched
 - jekyll
 
 ### pip
-- mpv-remote-app
 - youtube-dl
 - yt-dlp

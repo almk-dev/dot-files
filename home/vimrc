@@ -4,29 +4,40 @@ Plug 'dag/vim-fish'           , {'as':'fish'}
 Plug 'tpope/vim-fugitive'     , {'as':'fugitive'}
 Plug 'airblade/vim-gitgutter' , {'as':'gitgutter'}
 Plug 'morhetz/gruvbox'        , {'as':'gruvbox'}
+Plug 'sheerun/vim-polyglot'   , {'as':'polyglot'}
 Plug 'edkolev/tmuxline.vim'   , {'as':'tmuxline'}
 call plug#end()
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'dark'
-
-colorscheme gruvbox
-set background=dark
-set term=xterm-256color
+let g:airline_theme = 'gruvbox'
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_sign_column = 'bg0'
 
 filetype indent on
 filetype plugin on
 syntax enable
 
-" WIP ===========================================================================================
-set number
+colorscheme gruvbox
+set background=dark
+set term=xterm-256color
+set termguicolors
+
+set mouse=a
 set relativenumber
+
+set hlsearch
+set ignorecase
+set incsearch
+
+set showcmd
+set wildmenu
+
+" WIP ===========================================================================================
 set switchbuf=useopen
 
 set autoindent
 set colorcolumn=100
 set nowrap
-set ignorecase
 set smartcase
 set smartindent
 set splitbelow
@@ -47,17 +58,6 @@ set updatetime=100
 set ttymouse=xterm2
 set backspace=2
 set cursorline
-set hlsearch
-set incsearch
 set laststatus=2
-set mouse=a
-set ruler
-set showcmd
-set wildmenu
 
-highlight Normal                ctermbg=None
-highlight SignColumn            ctermbg=None
-highlight GitGutterAdd          ctermbg=None
-highlight GitGutterDelete       ctermbg=None
-highlight GitGutterChange       ctermbg=None
-highlight GitGutterChangeDelete ctermbg=None
+nnoremap <silent><CR> :nohlsearch<CR><CR>

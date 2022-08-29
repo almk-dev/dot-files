@@ -1,0 +1,16 @@
+currency-summary-only: true
+currency-disable-unit-cost-conversion: true
+currency: USD
+interval: 1
+show-fundamentals: true
+show-holdings: true
+show-separator: true
+show-summary: true
+show-tags: true
+sort: user
+
+watchlist:
+  - TQQQ
+  - ^NDX
+  - UPRO
+  - SPY

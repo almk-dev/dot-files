@@ -31,7 +31,7 @@ chart_type: candle
 #hide_toggle: true
 
 # Show volumes graph
-#show_volumes: true
+show_volumes: true
 
 # Show x-axis labels
 show_x_labels: true
