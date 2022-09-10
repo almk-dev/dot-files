@@ -33,6 +33,7 @@ set term=xterm-256color
 set termguicolors
 
 set mouse=a
+set number
 set relativenumber
 set showcmd
 set wildmenu
