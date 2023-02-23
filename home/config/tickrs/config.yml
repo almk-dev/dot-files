@@ -3,12 +3,13 @@ symbols:
   - SQQQ
   - ^NDX
   - UPRO
+  - SPXU
   - SPY
 
 # Chart type to start app with
 # Default is line
 # Possible values: line, candle, kagi
-chart_type: candle
+chart_type: line
 
 # Use specified time frame when starting program and when new stocks are added
 # Default is 1D

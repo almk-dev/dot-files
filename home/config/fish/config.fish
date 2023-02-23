@@ -12,8 +12,8 @@ alias open='xdg-open'
 alias repall='cd ~/Documents/repos/'
 alias repdot='cd ~/Documents/repos/dot-files/'
 alias repsite='cd ~/Documents/repos/abdul-malek-dev.github.io/'
-alias scon='find ~ -name "*.sync*"'
-alias tick='~/Documents/tools/ticker --config ~/.config/ticker/ticker.yml'
+alias scon='find ~ -name "*.sync-conflict*" -o -name "*.syncthing*.tmp"'
+alias tick='ticker --config ~/.config/ticker/ticker.yml'
 alias xclip='xclip -selection clipboard'
 
 function pkgup
