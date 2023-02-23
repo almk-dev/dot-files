@@ -6,47 +6,41 @@ Font: JetBrains Mono
 
 ## install-list
 #### apt
-- chrome-gnome-shell
+- btop
 - cmus
 - curl
-- diffpdf
 - exfat-fuse
-- exfat-utils
-- fish
+- flatpak
 - git
 - gnome-tweaks
-- gnome-shell-extension-prefs
+- gnome-sushi
 - mpv
-- nodejs
-- npm
 - picard
 - python3-pip
-- qbittorrent
-- ruby-full
 - simple-scan
 - texlive-full
 - tmux
 - vim
 - xclip
-- youtube-dl
 
 #### deb/ppa/src
 - alacritty
-- btop
 - chrome
 - code
-- discord
+- docker
+- fish
 - foliate
 - jellyfin
 - syncthing
 - ticker
 - tickrs
 
-### gem
-- bundler
-- gh-pages
-- jekyll
-
 ### pip
-- youtube-dl
 - yt-dlp
+- youtube-dl
+
+## config-notes
+- chrome
+    - cp /usr/share/applications/google-chrome.desktop ~/.local/share/applications/
+    - ~/.local/share/applications/google-chrome.desktop
+        - --force-dark-mode
