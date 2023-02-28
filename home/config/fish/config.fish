@@ -69,3 +69,11 @@ function vlib
             grep -i $argv[1] ~/Videos/.tracking/*
     end
 end
+
+# ruby-gems
+set -gx GEM_HOME "$HOME/.gems"
+set -gx PATH $PATH "$GEM_HOME/bin"
+
+# pnpm
+set -gx PNPM_HOME "$HOME/.local/share/pnpm"
+set -gx PATH $PATH "$PNPM_HOME"

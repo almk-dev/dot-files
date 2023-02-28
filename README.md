@@ -17,6 +17,7 @@ Font: JetBrains Mono
 - mpv
 - picard
 - python3-pip
+- ruby-full
 - simple-scan
 - texlive-full
 - tmux
@@ -35,9 +36,19 @@ Font: JetBrains Mono
 - ticker
 - tickrs
 
-### pip
-- yt-dlp
-- youtube-dl
+
+### other
+- fish
+    - bass
+- pip
+    - youtube-dl
+    - yt-dlp
+- pnpm
+    - node
+- gem
+    - bundler
+    - jekyll
+
 
 ## config-notes
 - chrome
