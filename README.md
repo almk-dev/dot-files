@@ -30,12 +30,14 @@ Font: JetBrains Mono
 - code
 - docker
 - fish
-- foliate
 - jellyfin
 - syncthing
 - ticker
 - tickrs
 
+### flatpak
+- foliate
+- fragments
 
 ### other
 - fish
