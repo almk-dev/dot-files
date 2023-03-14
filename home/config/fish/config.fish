@@ -25,6 +25,7 @@ function pkgup
         case "-a" "--all"
             pip3 install --upgrade youtube-dl yt-dlp
             vim +PlugUpdate +PlugUpgrade +PlugClean +qa
+            flatpak update -y
     end
 end
 
