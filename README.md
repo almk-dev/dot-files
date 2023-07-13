@@ -34,6 +34,7 @@ Font: JetBrains Mono
 - syncthing
 - ticker
 - tickrs
+- zoom
 
 ### flatpak
 - foliate
@@ -42,9 +43,6 @@ Font: JetBrains Mono
 ### other
 - fish
     - bass
-- pip
-    - youtube-dl
-    - yt-dlp
 - pnpm
     - node
 - gem
@@ -53,7 +51,5 @@ Font: JetBrains Mono
 
 
 ## config-notes
-- chrome
-    - cp /usr/share/applications/google-chrome.desktop ~/.local/share/applications/
-    - ~/.local/share/applications/google-chrome.desktop
-        - --force-dark-mode
+- flatpak
+    - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo

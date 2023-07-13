@@ -23,9 +23,9 @@ function pkgup
     sudo apt autoremove --purge
     switch $argv[1]
         case "-a" "--all"
-            pip3 install --upgrade youtube-dl yt-dlp
             vim +PlugUpdate +PlugUpgrade +PlugClean +qa
             flatpak update -y
+            flatpak uninstall --unused
     end
 end
 
