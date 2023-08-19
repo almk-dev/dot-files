@@ -72,9 +72,18 @@ function vlib
 end
 
 # ruby-gems
-set -gx GEM_HOME "$HOME/.gems"
-set -gx PATH $PATH "$GEM_HOME/bin"
+set -gx GEM_PATH "$HOME/.gems"
+set -gx PATH $PATH "$GEM_PATH/bin"
 
 # pnpm
-set -gx PNPM_HOME "$HOME/.local/share/pnpm"
-set -gx PATH $PATH "$PNPM_HOME"
+set -gx PNPM_PATH "$HOME/.local/share/pnpm"
+set -gx PATH $PATH "$PNPM_PATH"
+
+# rust
+set -gx RUST_PATH "$HOME/.cargo/bin"
+set -gx PATH $PATH "$RUST_PATH"
+
+# go
+set -gx GOPATH "$HOME/.go"
+set -gx GO_PATH "/usr/local/go/bin"
+set -gx PATH $PATH "$GO_PATH"
