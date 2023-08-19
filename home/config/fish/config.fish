@@ -76,8 +76,8 @@ set -gx GEM_PATH "$HOME/.gems/bin"
 set -gx PATH $PATH "$GEM_PATH"
 
 # pnpm
-set -gx PNPM_PATH "$HOME/.local/share/pnpm"
-set -gx PATH $PATH "$PNPM_PATH"
+set -gx PNPM_HOME "$HOME/.local/share/pnpm"
+set -gx PATH $PATH "$PNPM_HOME"
 
 # rust
 set -gx RUST_PATH "$HOME/.cargo/bin"
