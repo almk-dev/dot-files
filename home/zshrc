@@ -1,0 +1,36 @@
+export ZSH=$HOME/.ohmyzsh
+ZSH_THEME="terminalparty"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
+export TERM="xterm-256color"
+
+alias benchshell='for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done'
+alias ckrs='tickrs'
+alias dkf='docker logs --follow'
+alias groot='cd $(git rev-parse --show-toplevel)'
+alias lag='la --group-directories-first'
+alias la='ls -la'
+alias lav='la -v'
+alias lofi='mpv --no-video --volume=50 https://youtu.be/jfKfPfyJRdk'
+alias ls='ls -G'
+alias mpvnv='mpv --no-video'
+alias tick='ticker'
+alias ttynor='ln -snfv ~/.dot-files/home/alacritty-normal.yml ~/.alacritty.yml'
+alias ttyret='ln -snfv ~/.dot-files/home/alacritty-retina.yml ~/.alacritty.yml'
+alias xclip='xclip -selection clipboard'
+
+gren() {
+    if [[ -z $2 ]]; then
+        OLD_BRANCH=$(git branch --show-current)
+        NEW_BRANCH=$1
+    else
+        OLD_BRANCH=$1
+        NEW_BRANCH=$2
+    fi
+    git branch -m $OLD_BRANCH $NEW_BRANCH
+    git push origin --delete $OLD_BRANCH
+    git branch --unset-upstream $NEW_BRANCH
+    git push origin $NEW_BRANCH
+    git push --set-upstream origin $NEW_BRANCH
+}

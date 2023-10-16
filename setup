@@ -5,6 +5,10 @@ for file in $cwd/home/*; do
         for file in $cwd/home/config/*; do
             ln -snfv `dirname $file/.` ~/.config/`basename $file`
         done
+    elif [[ `basename $file` == 'fonts' ]]; then
+        for file in $cwd/home/fonts/*; do
+            ln -snfv `dirname $file/.` ~/Library/Fonts/`basename $file`
+        done
     else
         ln -snfv `dirname $file/.` ~/.`basename $file`
     fi

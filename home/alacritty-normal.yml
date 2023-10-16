@@ -1,0 +1,51 @@
+import:
+  - ~/.dot-files/home/alacritty-gruvbox.yml
+
+window:
+  dimensions:
+    columns: 120
+    lines: 35
+
+  padding:
+    x: 4
+    y: 4
+
+font:
+  size: 14
+
+  normal:
+    family: JetBrains Mono
+    style: Regular
+
+  bold:
+    family: JetBrains Mono
+    style: Bold
+
+  italic:
+    family: JetBrains Mono
+    style: Italic
+
+  bold_italic:
+    family: JetBrains Mono
+    style: Bold Italic
+
+  offset:
+    x: 0
+    y: -2
+
+  glyph_offset:
+    x: 0
+    y: -1
+
+draw_bold_text_with_bright_colors: true
+
+key_bindings:
+  - { key: LBracket, mods: Alt, chars: "\x1b[" }
+  - { key: RBracket, mods: Alt, chars: "\x1b]" }
+  - { key: H,        mods: Alt, chars: "\x1bh" }
+  - { key: J,        mods: Alt, chars: "\x1bj" }
+  - { key: K,        mods: Alt, chars: "\x1bk" }
+  - { key: L,        mods: Alt, chars: "\x1bl" }
+  - { key: Left,     mods: Alt, chars: "\x1bb" }
+  - { key: Right,    mods: Alt, chars: "\x1bf" }
+  - { key: Return,   mods: Alt, action: ToggleFullscreen }
