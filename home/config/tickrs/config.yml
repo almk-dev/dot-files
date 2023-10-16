@@ -1,9 +1,9 @@
 symbols:
   - TQQQ
   - SQQQ
-  - ^NDX
   - UPRO
   - SPXU
+  - ^NDX
   - SPY
 
 # Chart type to start app with
