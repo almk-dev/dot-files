@@ -1,5 +1,5 @@
 # dot-files
-Linux dot-files across all my machines
+macOS dot-files across all my machines
 
 Emulator: Alacritty
 Font: JetBrains Mono
@@ -10,12 +10,10 @@ Font: JetBrains Mono
 - btop
 - chrome
 - code
-- curl
-- docker
 - git
 - mpv
+- ohmyzsh
 - ticker
 - tickrs
 - tmux
 - vim
-- zoom
