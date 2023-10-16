@@ -5,51 +5,17 @@ Emulator: Alacritty
 Font: JetBrains Mono
 
 ## install-list
-#### apt
-- btop
-- cmus
-- curl
-- exfat-fuse
-- flatpak
-- git
-- gnome-tweaks
-- gnome-sushi
-- mpv
-- picard
-- python3-pip
-- ruby-full
-- simple-scan
-- texlive-full
-- tmux
-- vim
-- xclip
-
-#### deb/ppa/src
 - alacritty
+- brew
+- btop
 - chrome
 - code
+- curl
 - docker
-- fish
-- jellyfin
-- syncthing
+- git
+- mpv
 - ticker
 - tickrs
+- tmux
+- vim
 - zoom
-
-### flatpak
-- foliate
-- fragments
-
-### other
-- fish
-    - bass
-- pnpm
-    - node
-- gem
-    - bundler
-    - jekyll
-
-
-## config-notes
-- flatpak
-    - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
