@@ -4,6 +4,7 @@
 !/home/config/cmus/autosave
 
 /home/fonts/.uuid
+/home/ohmyzsh/
 
 /home/vim/*
 !/home/vim/autoload/
