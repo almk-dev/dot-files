@@ -7,7 +7,7 @@ for file in $cwd/home/*; do
         done
     elif [[ `basename $file` == 'fonts' ]]; then
         for file in $cwd/home/fonts/*; do
-            ln -snfv `dirname $file/.` ~/Library/Fonts/`basename $file`
+            cp `dirname $file/.` ~/Library/Fonts/`basename $file`
         done
     else
         ln -snfv `dirname $file/.` ~/.`basename $file`

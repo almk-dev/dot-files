@@ -39,7 +39,7 @@ font:
 
 draw_bold_text_with_bright_colors: true
 
-rey_bindings:
+key_bindings:
   - { key: LBracket, mods: Alt, chars: "\x1b[" }
   - { key: RBracket, mods: Alt, chars: "\x1b]" }
   - { key: H,        mods: Alt, chars: "\x1bh" }
@@ -48,4 +48,4 @@ rey_bindings:
   - { key: L,        mods: Alt, chars: "\x1bl" }
   - { key: Left,     mods: Alt, chars: "\x1bb" }
   - { key: Right,    mods: Alt, chars: "\x1bf" }
-  - { key: Return,   mods: Alt, action: ToggleFullscreen }
+  - { key: Return,   mods: Alt, action: ToggleSimpleFullscreen }

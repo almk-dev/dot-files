@@ -48,4 +48,4 @@ key_bindings:
   - { key: L,        mods: Alt, chars: "\x1bl" }
   - { key: Left,     mods: Alt, chars: "\x1bb" }
   - { key: Right,    mods: Alt, chars: "\x1bf" }
-  - { key: Return,   mods: Alt, action: ToggleFullscreen }
+  - { key: Return,   mods: Alt, action: ToggleSimpleFullscreen }
