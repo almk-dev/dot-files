@@ -6,6 +6,7 @@ Plug 'mhinz/vim-signify'      , {'as':'signify'}
 Plug 'morhetz/gruvbox'        , {'as':'gruvbox'}
 Plug 'sheerun/vim-polyglot'   , {'as':'polyglot'}
 Plug 'edkolev/tmuxline.vim'   , {'as':'tmuxline'}
+Plug 'fatih/vim-go'           , {'as':'vim-go'}
 call plug#end()
 
 let g:airline_powerline_fonts = 1
