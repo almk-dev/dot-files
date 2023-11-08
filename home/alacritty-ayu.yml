@@ -1,7 +1,6 @@
 colors:
   primary:
-  # background: '#0f1419'
-    background: '#101010'  # Custom background override
+    background: '#0f1419'
     foreground: '#e6e1cf'
 
   normal:
