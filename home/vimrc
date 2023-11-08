@@ -1,23 +1,18 @@
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline', {'as':'airline'}
+Plug 'ayu-theme/ayu-vim'      , {'as':'ayu'}
 Plug 'dag/vim-fish'           , {'as':'fish'}
 Plug 'tpope/vim-fugitive'     , {'as':'fugitive'}
-Plug 'mhinz/vim-signify'      , {'as':'signify'}
-Plug 'morhetz/gruvbox'        , {'as':'gruvbox'}
 Plug 'sheerun/vim-polyglot'   , {'as':'polyglot'}
+Plug 'mhinz/vim-signify'      , {'as':'signify'}
 Plug 'edkolev/tmuxline.vim'   , {'as':'tmuxline'}
 Plug 'fatih/vim-go'           , {'as':'vim-go'}
 call plug#end()
 
+let ayucolor = 'dark'
+
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'dark'
-
-let g:gruvbox_bold = 1
-let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_invert_selection = 0
-let g:gruvbox_invert_signs = 0
-let g:gruvbox_italic = 1
-let g:gruvbox_sign_column = 'bg0'
 
 let g:signify_sign_add = '▎'
 let g:signify_sign_change = '▎'
@@ -28,7 +23,7 @@ filetype indent on
 filetype plugin on
 syntax enable
 
-colorscheme gruvbox
+colorscheme ayu
 set background=dark
 set term=xterm-256color
 set termguicolors

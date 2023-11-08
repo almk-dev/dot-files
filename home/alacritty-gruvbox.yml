@@ -1,33 +1,25 @@
 colors:
   primary:
-  # background: '#1D2021'
+  # background: '#1d2021'
     background: '#101010'  # Custom background override
-    foreground: '#FBF1C7'
-
-  cursor:
-    text:   '#282828'
-    cursor: '#A89984'
-
-  selection:
-    text: CellForeground
-    background: '#928374'
+    foreground: '#fbf1c7'
 
   normal:
     black:   '#282828'
-    red:     '#CC241D'
-    green:   '#98971A'
-    yellow:  '#D79921'
+    red:     '#cc241d'
+    green:   '#98971a'
+    yellow:  '#d79921'
     blue:    '#458588'
-    magenta: '#B16286'
-    cyan:    '#689D6A'
-    white:   '#A89984'
+    magenta: '#b16286'
+    cyan:    '#689d6a'
+    white:   '#a89984'
 
   bright:
     black:   '#928374'
-    red:     '#FB4934'
-    green:   '#B8BB26'
-    yellow:  '#FABD2F'
-    blue:    '#83A598'
-    magenta: '#D3869B'
-    cyan:    '#8EC07C'
-    white:   '#EBDBB2'
+    red:     '#fb4934'
+    green:   '#b8bb26'
+    yellow:  '#fabd2f'
+    blue:    '#83a598'
+    magenta: '#d3869b'
+    cyan:    '#8ec07c'
+    white:   '#ebdbb2'
