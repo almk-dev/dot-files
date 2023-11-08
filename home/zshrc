@@ -17,8 +17,8 @@ alias lofi='mpv --no-video --volume=50 https://youtu.be/jfKfPfyJRdk'
 alias ls='ls -G'
 alias mpvnv='mpv --no-video'
 alias tick='ticker'
-alias ttynor='ln -snfv ~/.dot-files/home/alacritty-normal.yml ~/.alacritty.yml'
-alias ttyret='ln -snfv ~/.dot-files/home/alacritty-retina.yml ~/.alacritty.yml'
+alias ttynor='ln -snfv ~/Documents/almk-dev/dot-files/home/alacritty-normal.yml ~/.alacritty.yml'
+alias ttyret='ln -snfv ~/Documents/almk-dev/dot-files/home/alacritty-retina.yml ~/.alacritty.yml'
 alias xclip='xclip -selection clipboard'
 
 gren() {
@@ -35,3 +35,12 @@ gren() {
     git push origin $NEW_BRANCH
     git push --set-upstream origin $NEW_BRANCH
 }
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/abdulmalek/Documents/gcloud/path.zsh.inc' ]; then . '/Users/abdulmalek/Documents/gcloud/path.zsh.inc'; fi
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/abdulmalek/Documents/gcloud/completion.zsh.inc' ]; then . '/Users/abdulmalek/Documents/gcloud/completion.zsh.inc'; fi
+
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.1.3
