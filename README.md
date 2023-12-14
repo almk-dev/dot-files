@@ -10,6 +10,7 @@ Font: JetBrains Mono
 - btop
 - chrome
 - code
+- direnv
 - git
 - mpv
 - ohmyzsh
