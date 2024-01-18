@@ -9,7 +9,7 @@ Plug 'edkolev/tmuxline.vim'   , {'as':'tmuxline'}
 Plug 'fatih/vim-go'           , {'as':'vim-go'}
 call plug#end()
 
-let ayucolor = 'mirage'
+let ayucolor = 'dark'
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'dark'
