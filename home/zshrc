@@ -37,7 +37,7 @@ gren() {
 export GOPATH=$HOME/.go
 export PATH=$GOPATH/bin:$PATH
 
-# rust (cargo)
+# rust
 . "$HOME/.cargo/env"
 
 # direnv
