@@ -71,6 +71,15 @@ function vlib
     end
 end
 
+# go
+set -gx GO_HOME "/usr/local/go/bin"
+set -gx PATH $PATH "$GO_HOME"
+set -gx GOPATH "$HOME/.go" # For go modules, not for go runtime
+
+# rust
+set -gx RUST_HOME "$HOME/.cargo/bin"
+set -gx PATH $PATH "$RUST_HOME"
+
 # ruby-gems
 set -gx GEM_HOME "$HOME/.gems/bin"
 set -gx PATH $PATH "$GEM_HOME"
@@ -78,12 +87,3 @@ set -gx PATH $PATH "$GEM_HOME"
 # pnpm
 set -gx PNPM_HOME "$HOME/.local/share/pnpm"
 set -gx PATH $PATH "$PNPM_HOME"
-
-# rust
-set -gx RUST_HOME "$HOME/.cargo/bin"
-set -gx PATH $PATH "$RUST_HOME"
-
-# go
-set -gx GO_HOME "/usr/local/go/bin"
-set -gx PATH $PATH "$GO_HOME"
-set -gx GOPATH "$HOME/.go" # For go modules, not for go runtime
