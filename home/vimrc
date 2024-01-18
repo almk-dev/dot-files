@@ -8,7 +8,7 @@ Plug 'sheerun/vim-polyglot'   , {'as':'polyglot'}
 Plug 'edkolev/tmuxline.vim'   , {'as':'tmuxline'}
 call plug#end()
 
-let ayucolor = 'mirage'
+let ayucolor = 'dark'
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'dark'

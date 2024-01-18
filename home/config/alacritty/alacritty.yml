@@ -1,5 +1,5 @@
 import:
-  - ~/.config/alacritty/ayu-mirage.yml
+  - ~/.config/alacritty/ayu-dark.yml
 
 window:
   decorations: none
