@@ -38,7 +38,8 @@ export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 
 # rust
-. "$HOME/.cargo/env"
+export RUST_HOME=$HOME/.cargo/env
+export PATH=$PATH:$RUST_HOME
 
 # direnv
 eval "$(direnv hook zsh)"
