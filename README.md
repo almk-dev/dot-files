@@ -31,6 +31,7 @@ Font: JetBrains Mono
 - docker
 - fish
 - jellyfin
+- rpi-imager
 - syncthing
 - ticker
 - tickrs
