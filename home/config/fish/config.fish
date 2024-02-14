@@ -73,8 +73,8 @@ end
 
 # go
 set -gx GO_HOME "/usr/local/go/bin"
-set -gx PATH $PATH "$GO_HOME"
-set -gx GOPATH "$HOME/.go" # For go modules, not for go runtime
+set -gx GOPATH "$HOME/.go"
+set -gx PATH $PATH "$GO_HOME" "$GOPATH/bin"
 
 # rust
 set -gx RUST_HOME "$HOME/.cargo/bin"
