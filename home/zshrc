@@ -14,8 +14,8 @@ alias lofi='mpv --no-video --volume=50 https://youtu.be/jfKfPfyJRdk'
 alias ls='ls -G'
 alias mpvnv='mpv --no-video'
 alias tick='ticker'
-alias ttynor='ln -snfv ~/Documents/almk-dev/dot-files/home/alacritty-normal.yml ~/.alacritty.yml'
-alias ttyret='ln -snfv ~/Documents/almk-dev/dot-files/home/alacritty-retina.yml ~/.alacritty.yml'
+alias ttynor='ln -snfv ~/Documents/almk-dev/dot-files/home/alacritty-normal.toml ~/.alacritty.toml'
+alias ttyret='ln -snfv ~/Documents/almk-dev/dot-files/home/alacritty-retina.toml ~/.alacritty.toml'
 alias xclip='xclip -selection clipboard'
 
 gren() {
