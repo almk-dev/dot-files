@@ -6,6 +6,7 @@ Font: JetBrains Mono
 
 ## install-list
 #### apt
+- alacritty
 - btop
 - cmus
 - curl
@@ -25,11 +26,11 @@ Font: JetBrains Mono
 - xclip
 
 #### deb/ppa/src
-- alacritty
 - chrome
 - code
 - docker
 - fish
+- helix
 - jellyfin
 - rpi-imager
 - syncthing
