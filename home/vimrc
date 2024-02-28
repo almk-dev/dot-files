@@ -3,8 +3,8 @@ Plug 'vim-airline/vim-airline', {'as':'airline'}
 Plug 'ayu-theme/ayu-vim'      , {'as':'ayu'}
 Plug 'dag/vim-fish'           , {'as':'fish'}
 Plug 'tpope/vim-fugitive'     , {'as':'fugitive'}
-Plug 'mhinz/vim-signify'      , {'as':'signify'}
 Plug 'sheerun/vim-polyglot'   , {'as':'polyglot'}
+Plug 'mhinz/vim-signify'      , {'as':'signify'}
 Plug 'edkolev/tmuxline.vim'   , {'as':'tmuxline'}
 call plug#end()
 
