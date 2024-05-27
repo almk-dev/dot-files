@@ -87,5 +87,5 @@ x = 4
 y = 4
 
 [window]
-opacity = 0.80
+opacity = 1.0
 blur = true
