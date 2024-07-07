@@ -33,6 +33,9 @@ gren() {
     git push --set-upstream origin $NEW_BRANCH
 }
 
+# gpg
+export GPG_TTY=$(tty)
+
 # go
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
