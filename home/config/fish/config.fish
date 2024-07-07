@@ -71,6 +71,9 @@ function vlib
     end
 end
 
+# gpg
+set -gx GPG_TTY (tty)
+
 # go
 set -gx GO_HOME "/usr/local/go/bin"
 set -gx GOPATH "$HOME/.go"
