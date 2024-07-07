@@ -1,6 +1,7 @@
 [user]
     name = Abdul Malek
     email = me@almk.dev
+    signingkey = 6AF1A97C36A4C4F7
 [color]
     ui = auto
 [push]
@@ -9,3 +10,7 @@
     rebase = false
 [core]
     editor = vim
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[commit]
+    gpgsign = true
