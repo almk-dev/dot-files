@@ -3,7 +3,7 @@ import:
 
 
 # window.opacity = 0.80
-# window.blue = true
+# window.blur = true
 window:
   decorations: none
 
