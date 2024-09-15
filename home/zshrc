@@ -3,6 +3,8 @@ ZSH_THEME="terminalparty"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+export LESS="Rx4"
+
 alias benchshell='for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done'
 alias ckrs='tickrs'
 alias dkf='docker logs --follow'
