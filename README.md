@@ -43,6 +43,7 @@ Font: JetBrains Mono
 - fragments
 
 ### other
+- d2
 - fish
     - bass
 - pnpm

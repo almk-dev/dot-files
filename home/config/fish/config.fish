@@ -74,6 +74,10 @@ end
 # gpg
 set -gx GPG_TTY (tty)
 
+# local
+set -gx LOCAL_HOME "$HOME/.local/bin"
+set -gx PATH $PATH "$LOCAL_HOME"
+
 # go
 set -gx GO_HOME "/usr/local/go/bin"
 set -gx GOPATH "$HOME/.go"
