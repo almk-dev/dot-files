@@ -74,6 +74,9 @@ end
 # gpg
 set -gx GPG_TTY (tty)
 
+# less
+set -gx LESS "Rx4"
+
 # local
 set -gx LOCAL_HOME "$HOME/.local/bin"
 set -gx PATH $PATH "$LOCAL_HOME"
