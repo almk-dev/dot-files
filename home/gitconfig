@@ -6,6 +6,7 @@
     ui = auto
 [push]
     default = simple
+	autoSetupRemote = true
 [pull]
     rebase = false
 [core]
