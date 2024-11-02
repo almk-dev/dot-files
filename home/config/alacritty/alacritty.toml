@@ -1,3 +1,4 @@
+[general]
 import = ["/home/almk/.config/alacritty/catppuccin-mocha.toml"]
 
 [colors]
