@@ -16,6 +16,7 @@ Font: JetBrains Mono
 - gnome-tweaks
 - gnome-sushi
 - mpv
+- pcs
 - picard
 - python3-pip
 - ruby-full
@@ -51,6 +52,7 @@ Font: JetBrains Mono
 - gem
     - bundler
     - jekyll
+- yubico-authenticator
 
 
 ## config-notes
