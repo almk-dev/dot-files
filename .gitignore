@@ -1,4 +1,5 @@
 *.swp
+*.old
 
 /home/config/cmus/*
 !/home/config/cmus/autosave
