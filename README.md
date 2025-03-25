@@ -13,8 +13,9 @@ Font: JetBrains Mono
 - exfat-fuse
 - flatpak
 - git
-- gnome-tweaks
+- gnome-shell-extensions
 - gnome-sushi
+- gnome-tweaks
 - mpv
 - picard
 - python3-pip
