@@ -53,11 +53,6 @@ if [ -f '/Users/abdulmalek/Documents/gcloud/path.zsh.inc' ]; then . '/Users/abdu
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/abdulmalek/Documents/gcloud/completion.zsh.inc' ]; then . '/Users/abdulmalek/Documents/gcloud/completion.zsh.inc'; fi
 
-# ruby
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
-chruby ruby-3.1.3
-
 # pnpm
 export PNPM_HOME="/Users/abdulmalek/Library/pnpm"
 case ":$PATH:" in
