@@ -1,5 +1,5 @@
 export ZSH=$HOME/.ohmyzsh
-ZSH_THEME="terminalparty"
+ZSH_THEME="awesomepanda"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
