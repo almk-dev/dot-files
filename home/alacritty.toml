@@ -1,5 +1,5 @@
 [general]
-import = ["~/Documents/gh/almk-dev/dot-files/home/alacritty-catppuccin-mocha.toml"]
+import = ["~/Documents/gh/almk/dot-files/home/alacritty-catppuccin-mocha.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = true
