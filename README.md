@@ -8,23 +8,27 @@ Font: JetBrains Mono
 #### apt
 - alacritty
 - btop
-- cmus
-- curl
 - exfat-fuse
 - flatpak
 - git
 - gnome-shell-extensions
 - gnome-sushi
 - gnome-tweaks
-- mpv
-- picard
 - python3-pip
 - ruby-full
+    - ruby-bundler
 - simple-scan
 - texlive-full
 - tmux
 - vim
 - xclip
+
+#### probationary
+- openrgb
+- kew
+- mpv
+- picard
+- cmus
 
 #### deb/ppa/src
 - chrome
@@ -52,7 +56,27 @@ Font: JetBrains Mono
 - gem
     - bundler
     - jekyll
+- obs
+- latex/xelatex
 
 ## config-notes
 - flatpak
     - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+
+## cachyos
+paru/pacman
+    google-chrome
+    syncthing
+    discord
+    ttf-jetbrains-mono
+    sbctl
+    helix
+
+
+## to-do
+update mlib -m to be agnostic to player
+remove fonts
+switch vim config to helix
+consider gnome shell extensions
+    look into some tiling extension

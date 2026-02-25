@@ -1,17 +1,17 @@
 [user]
     name = Abdul Malek
     email = me@almk.dev
-    signingkey = 6AF1A97C36A4C4F7
-[color]
-    ui = auto
-[push]
-    default = simple
-	autoSetupRemote = true
-[pull]
-    rebase = false
-[core]
-    editor = vim
-[url "git@github.com:"]
-    insteadOf = https://github.com/
+    signingkey = /home/almk/.ssh/id_ed25519.pub
+[gpg]
+    format = ssh
 [commit]
     gpgsign = true
+[push]
+    default = simple
+    autoSetupRemote = true
+[core]
+    editor = vim
+[color]
+    ui = auto
+[url "git@github.com:"]
+    insteadOf = https://github.com/
