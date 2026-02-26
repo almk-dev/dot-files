@@ -39,8 +39,6 @@ Font: JetBrains Mono
 - jellyfin
 - rpi-imager
 - syncthing
-- ticker
-- tickrs
 - zoom
 
 ### flatpak
@@ -65,13 +63,20 @@ Font: JetBrains Mono
 
 
 ## cachyos
-paru/pacman
-    google-chrome
+default
+    remove
+        alacritty
+        console
+arch
+    ghostty
+    zellij
+    ttf-jetbrains-mono
     syncthing
     discord
-    ttf-jetbrains-mono
     sbctl
     helix
+aur
+    google-chrome
 
 
 ## to-do

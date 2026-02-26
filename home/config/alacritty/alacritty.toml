@@ -19,7 +19,7 @@ x = 0
 y = -1
 
 [window]
-decorations = "full"
+decorations = "none"
 dynamic_padding = true
 
 [window.dimensions]
@@ -30,7 +30,8 @@ lines = 35
 x = 8
 y = 8
 
-[[keyboard.bindings]]
-action = "ToggleFullscreen"
-key = "Return"
-mods = "Alt"
+[keyboard]
+bindings = [
+    { key = "N",      mods = "Control|Shift", action = "CreateNewWindow" },
+    { key = "Return", mods = "Alt",           action = "ToggleFullscreen" }
+]

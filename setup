@@ -9,3 +9,4 @@ for file in $cwd/home/*; do
         ln -snfv $file ~/.`basename $file`
     fi
 done
+sudo cp $cwd/etc/udev/rules.d/50-zsa.rules /etc/udev/rules.d/
