@@ -60,9 +60,11 @@ function mlib
                 cat ~/Music/.tracking/* | shuf -n 1
             end
         case -l --library
-            find ~/Music/library/ -type f | grep -i $argv[2]
+            set query (string join " " $argv[2..-1])
+            find ~/Music/library/ -type f -printf '%P\n' | grep -i $query
         case "*"
-            grep -i $argv[1] ~/Music/.tracking/*
+            set query (string join " " $argv[1..-1])
+            grep -i $query ~/Music/.tracking/*
     end
 end
 
@@ -82,6 +84,7 @@ function vlib
                 cat ~/Videos/.tracking/* | shuf -n 1
             end
         case "*"
-            grep -i $argv[1] ~/Videos/.tracking/*
+            set query (string join " " $argv[1..-1])
+            grep -i $query ~/Videos/.tracking/*
     end
 end
