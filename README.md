@@ -64,24 +64,36 @@ Font: JetBrains Mono
 
 ## cachyos
 default
+    fish
     remove
         alacritty
         console
 arch
-    ghostty
-    zellij
-    ttf-jetbrains-mono
-    syncthing
     discord
-    sbctl
-    helix
-aur
+    ghostty
     google-chrome
+    helix
+    sbctl
+    syncthing
+    texlive
+    ttf-jetbrains-mono
+    xclip
+    zellij
+    visual-studio-code-bin
 
 
 ## to-do
 update mlib -m to be agnostic to player
-remove fonts
 switch vim config to helix
 consider gnome shell extensions
     look into some tiling extension
+
+## steps
+- Disable CAPSLOCK with `gnome-tweaks`
+- Add keyboard shortcuts
+    - `Super+E` Files
+    - `Super+B` Browser
+    - `Super+T` Terminal
+- Add TorGuard VPN using WireGuard config
+- Set Ghostty as default terminal
+- Set up SMB connections to NAS
