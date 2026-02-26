@@ -80,6 +80,7 @@ arch
     xclip
     zellij
     visual-studio-code-bin
+    kew
 
 
 ## to-do

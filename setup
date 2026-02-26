@@ -1,12 +1,19 @@
 #!/bin/bash
+
 cwd=$(pwd)
-for file in $cwd/home/*; do
+home_dir=home
+udev_rules_dir=etc/udev/rules.d
+
+for file in $cwd/$home_dir/*; do
     if [[ `basename $file` == 'config' ]]; then
-        for file in $cwd/home/config/*; do
+        for file in $cwd/$home_dir/config/*; do
             ln -snfv $file ~/.config/`basename $file`
         done
     else
         ln -snfv $file ~/.`basename $file`
     fi
 done
-sudo cp $cwd/etc/udev/rules.d/50-zsa.rules /etc/udev/rules.d/
+
+for file in $cwd/$udev_rules_dir/*; do
+    sudo ln -snfv $file /$udev_rules_dir
+done
