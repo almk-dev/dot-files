@@ -55,11 +55,13 @@ font-size = 9
 adjust-cell-height = -2
 bold-color = bright
 
+background-opacity = .85
+
 window-width = 120
 window-height = 35
 window-decoration = none
-window-padding-x = 6
-window-padding-y = 6
+window-padding-x = 4
+window-padding-y = 4
 window-padding-balance = true
 
 shell-integration-features = ssh-env

@@ -1,51 +1,21 @@
 # dot-files
 Linux dot-files across all my machines
 
-Emulator: Alacritty
+Emulator: Ghostty
 Font: JetBrains Mono
 
 ## install-list
 #### apt
-- alacritty
-- btop
-- exfat-fuse
+- docker
 - flatpak
-- git
-- gnome-shell-extensions
-- gnome-sushi
+    - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 - gnome-tweaks
+- gnome-shell-extensions
 - python3-pip
 - ruby-full
     - ruby-bundler
-- simple-scan
-- texlive-full
-- tmux
-- vim
-- xclip
-
-#### probationary
-- openrgb
-- kew
-- mpv
-- picard
-- cmus
-
-#### deb/ppa/src
-- chrome
-- code
-- docker
-- fish
-- helix
-- jellyfin
-- rpi-imager
-- syncthing
-- zoom
-
-### flatpak
 - foliate
-- fragments
-
-### other
+- zoom
 - d2
 - fish
     - bass
@@ -55,16 +25,18 @@ Font: JetBrains Mono
     - bundler
     - jekyll
 - obs
-- latex/xelatex
 
-## config-notes
-- flatpak
-    - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
+#### probationary
+- mpv
+- openrgb
+- picard
 
 ## cachyos
 default
+    git
+    btop
     fish
+    simple-scan
     remove
         alacritty
         console
@@ -81,13 +53,15 @@ arch
     zellij
     visual-studio-code-bin
     kew
+    gnome-browser-connector
+
+gnome-extensions
+    AppIndicator
+    Tiling Shell
 
 
 ## to-do
-update mlib -m to be agnostic to player
 switch vim config to helix
-consider gnome shell extensions
-    look into some tiling extension
 
 ## steps
 - Disable CAPSLOCK with `gnome-tweaks`
