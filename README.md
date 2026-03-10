@@ -70,5 +70,4 @@ switch vim config to helix
     - `Super+B` Browser
     - `Super+T` Terminal
 - Add TorGuard VPN using WireGuard config
-- Set Ghostty as default terminal
 - Set up SMB connections to NAS
