@@ -50,7 +50,7 @@ function mlib
             echo $argv[2] >>~/Music/.tracking/research
             tail ~/Music/.tracking/research
         case -e --edit
-            vim ~/Music/.tracking/research
+            helix ~/Music/.tracking/research
         case -c --count
             cat ~/Music/.tracking/* | wc -l
         case -s --shuffle
@@ -74,7 +74,7 @@ function vlib
             echo $argv[2] >>~/Videos/.tracking/research
             tail ~/Videos/.tracking/research
         case -e --edit
-            vim ~/Videos/.tracking/research
+            helix ~/Videos/.tracking/research
         case -c --count
             cat ~/Videos/.tracking/* | wc -l
         case -s --shuffle
